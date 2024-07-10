@@ -3,8 +3,8 @@ import { promises as fs } from 'fs';
 const tagVariations = {
     major: {
         computerscience: ["computer science", "computing", "software engineering", "coding", "data structures", "computer", "developer"],
-        engineering: ["engineers", "engineering"],
-        "ux/ui": ["ux/ui", "ux", "ui", "user experience", "user interface"]
+        "ux/ui": ["ux/ui", "ux", "ui", "user experience", "user interface"],
+        engineering: ["engineers", "engineering"]
     },
     ethnicity: {
         asian: ["asian", "asian-american", "asia"],
