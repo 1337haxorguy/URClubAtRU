@@ -3,31 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrClubAtRU</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Search Testing</title>
+    <link rel="stylesheet" href="searchstyles.css">
 </head>
 <body>
-    <h1>Welcome to UR Club at RU</h1>
-    <p>Find the best clubs for you!</p>
-    <form id="clubSearchForm">
-        <input type="text" name="career" placeholder="Prospective Career Path" id="career-path">
-        <input type="text" name="culture" placeholder="Ethnicity" id="ethnicity">
-        <input type="text" name="sexual-orientation" placeholder="Sexual Orientation" id="sexual-orientation">
-        <input type="text" name="gender" placeholder="Gender Identity" id="gender-select">
-        <input type="text" name="social-preference" placeholder="Introverted or Extroverted?" id="social-preference">
-        <input type="text" name="hobbies" placeholder="Hobbies" id="hobby">
-        <input type="text" name="sports" placeholder="Sports" id="sports">
-        <input type="text" name="performing-arts" placeholder="Performing Arts or Musical Interests" id="performing-arts">
-        <input type="text" name="recreational-interests" placeholder="Other Recreational Interests" id="recreational-interests">
-        <input type="text" name="greek-life" placeholder="Interested in Greek Life?" id="greek-life">
-        <input type="text" name="political-affiliation" placeholder="Political Affiliation" id="political-affiliation">
-        <input type="text" name="causes" placeholder="Causes You're Passionate About" id="causes">
-        <input type="text" name="housing" placeholder="Special-Community Housing" id="special-housing">
+    <script src="./searchScript.js"></script>
 
+    <button onclick="location.href='/'">Go to Main Page</button>
+
+    <form id="majorForm">
         <div class="dropdown">
-            <button type="button" onclick="toggleDropdown('majorsDropdown')" class="dropbtn">Select Majors</button>
-            <div id="majorsDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction('majorsDropdown')">
+            <button type="button" onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
                 <a href="#accounting" onclick="addMajor(event, 'Accounting')">Accounting</a>
                 <a href="#biology" onclick="addMajor(event, 'Biology')">Biology</a>
                 <a href="#business" onclick="addMajor(event, 'Business')">Business</a>
@@ -58,18 +46,10 @@
                 <a href="#politicalScience" onclick="addMajor(event, 'Political Science')">Political Science</a>
                 <a href="#psychology" onclick="addMajor(event, 'Psychology')">Psychology</a>
                 <a href="#uxui" onclick="addMajor(event, 'UX/UI')">UX/UI</a>
-
-                <!-- Major options -->
-                <!-- Add your major options here as anchor tags -->
             </div>
         </div>
-
         <ul id="selectedMajors"></ul>
         <button type="submit">Submit</button>
     </form>
-    <button onclick="location.href='/search'">Go to Search Testing Page</button>
-    <div id="recommendations"></div>
-    <div id="club-list"></div>
-    <script src="./script.js"></script>
 </body>
 </html>
