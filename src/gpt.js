@@ -6,11 +6,14 @@ const openai = new OpenAI({
     apiKey: process.env.API_KEY,
 });
 
-export async function getRecommendations(prompt) {
+export async function getRecommendations(systemPrompt, userPrompt) {
     try {
         const response = await openai.chat.completions.create({
             model: "gpt-3.5-turbo",
-            messages: [{ role: "user", content: prompt }],
+            messages: [
+                { role: "system", content: systemPrompt },
+                { role: "user", content: userPrompt }
+            ],
             stream: false,
         });
         const generatedText = response.choices[0].message.content;
