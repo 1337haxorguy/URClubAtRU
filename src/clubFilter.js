@@ -46,7 +46,7 @@ const tagVariations = {
         dutch: ["Dutch", "Netherlands"],
         egyptian: ["Egyptian", "Egypt"],
         english: ["English", "England"],
-        filipino: ["Filipino", "Filipina", "Philippines", "pinoy", "philippine", "asia", "asian"],
+        filipino: ["Filipino", "Filipina", "Philippines", "pinoy", "philippine"],
         french: ["French", "France"],
         german: ["German", "Germany"],
         greek: ["Greek", "Greece"],
@@ -141,6 +141,22 @@ export function filterClubs(clubsData, filters, minMatches) {
         for (const key in filters) {
             if (filters.hasOwnProperty(key) && filters[key] && !matchedFilters.has(key)) { // Check if the filter value is not empty
                 const variations = getVariations(key, filters[key]);
+
+                // Gender-specific exclusion logic
+                if (key === 'gender') {
+                    const genderVariations = tagVariations.gender;
+                    const oppositeGender = filters[key] === 'male' ? 'female' : 'male';
+                    const oppositeVariations = genderVariations[oppositeGender];
+
+                    if (oppositeVariations.some(variation => {
+                        const regex = new RegExp(`\\b${variation}\\b`, 'i');
+                        return regex.test(club.name.toLowerCase()) || regex.test(club.description.toLowerCase());
+                    })) {
+                        return false; // Exclude club
+                    }
+                }
+                
+                
                 if (key === 'major' || key == 'hobby' || key == 'ethnicity') {
                     if (variations.some(variation => {
                         const regex = new RegExp(`\\b${variation}\\b`, 'i');

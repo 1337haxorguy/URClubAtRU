@@ -9,7 +9,8 @@ const openai = new OpenAI({
 export async function getRecommendations(systemPrompt, userPrompt) {
     try {
         const response = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+            // model: "gpt-4o-2024-05-13",
+            model: "gpt-3.5-turbo-0125",
             messages: [
                 { role: "system", content: systemPrompt },
                 { role: "user", content: userPrompt }

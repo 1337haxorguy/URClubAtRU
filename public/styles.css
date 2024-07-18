@@ -1,3 +1,52 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Container to center the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0; /* Background color for the larger screen */
+}
+
+
+/* Form and dropdown styles */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3e8e41;
+}
+
+/* Loading message */
 #loading-message {
     font-size: 1.5em;
     color: red;
@@ -5,6 +54,7 @@
     margin: 20px 0;
 }
 
+/* Recommendations styles */
 #recommendations {
     margin-top: 20px;
     background-color: #f9f9f9;
@@ -23,9 +73,7 @@
     font-size: 1.2em;
 }
 
-
-
-/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+/* Dropdown styles */
 .dropbtn {
     background-color: #04AA6D;
     color: white;
@@ -33,15 +81,13 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+}
+
+.dropbtn:hover, .dropbtn:focus {
     background-color: #3e8e41;
-  }
-  
-  /* The search field */
-  #myInput {
+}
+
+#myInput {
     box-sizing: border-box;
     background-image: url('searchicon.png');
     background-position: 14px 12px;
@@ -50,55 +96,60 @@
     padding: 14px 20px 12px 45px;
     border: none;
     border-bottom: 1px solid #ddd;
-  }
-  
-  /* The search field when it gets focus/clicked on */
-  #myInput:focus {outline: 3px solid #ddd;}
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f6f6f6;
     min-width: 230px;
-    max-height: 200px; /* Set max height for the dropdown */
-    overflow-y: auto;  /* Enable vertical scrolling */
+    max-height: 200px;
+    overflow-y: auto;
     border: 1px solid #ddd;
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display: block;}
-  
-  /* Style the selected majors list */
-  #selectedMajors {
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+/* Selected majors list styles */
+#selectedMajors {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
-  }
-  
-  #selectedMajors li {
+}
+
+#selectedMajors li {
     background-color: #f1f1f1;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
+}
+
+/* Ensure form elements are not stretched */
+form {
+    width: 100%;
+}
+
