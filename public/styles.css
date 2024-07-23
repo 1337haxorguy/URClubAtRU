@@ -6,22 +6,11 @@
 }
 
 body {
-    max-width: 630px;
+    max-width: 390px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* Container to center the content */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #f0f0f0; /* Background color for the larger screen */
-}
-
 
 /* Form and dropdown styles */
 form input[type="text"] {

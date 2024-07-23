@@ -13,7 +13,13 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use('/', express.static(path.join(__dirname, '../public')));
+app.use('/intro', express.static(path.join(__dirname, '../public/intro1')));
+app.use('/intro2', express.static(path.join(__dirname, '../public/intro2')));
+app.use('/question1', express.static(path.join(__dirname, '../public/question1')));
+app.use('/question2', express.static(path.join(__dirname, '../public/question2')));
+
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -43,11 +49,14 @@ app.post('/filter-clubs', async (req, res) => {
     - It is okay to recommend less than five clubs if there is a lack of matching clubs
         
     Step 3: **Include Diverse Club Types**
-    - Ensure the top five recommendations include at least:
-      - One hobby/interest club
-      - One career club
-      - One cultural club
-    - If there is insufficient data to include a club from one of these categories, it is acceptable to omit that category.
+    - The first recommendation should be a career club
+    - second should be a cultural club
+    - third should be a club based on a hobby
+    - fourth should be something about a cause they are passionate about
+    - fifth should be greek life if they mention they are interested
+
+    If there is not enough information, or if they are not interested in a certain category of club,
+    filling the space in with something else is fine
                 
    If a user is male in their given tags, under no circumstance will they be recommended female clubs, and vice versa
    Using the above steps, at least five clubs that are the best match for the user.
@@ -67,6 +76,23 @@ app.post('/filter-clubs', async (req, res) => {
 app.get('/search', (req, res) => {
     res.sendFile(path.join(__dirname, "..", 'public', 'search.html'));
 });
+
+app.get('/intro', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/intro1', 'intro.html'));
+});
+
+app.get('/intro2', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/intro2', 'intro2.html'));
+});
+
+app.get('/question1', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question1', 'question1.html'));
+});
+
+app.get('/question2', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question2', 'question2.html'));
+});
+
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);

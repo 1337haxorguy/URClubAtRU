@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrClubAtRU</title>
+    <link rel="icon" type="image/x-icon" href="/public/assets/img/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button onclick="location.href='/intro'">Go to Intro</button>
     <h1>Welcome to UR Club at RU</h1>
     <p>Find the best clubs for you!</p>
     <form id="clubSearchForm">
@@ -27,7 +29,7 @@
         <div class="dropdown">
             <button type="button" onclick="toggleDropdown('majorsDropdown')" class="dropbtn">Select Majors</button>
             <div id="majorsDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction('majorsDropdown')">
+                <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction('majorsDropdown')"> -->
                 <a href="#accounting" onclick="addMajor(event, 'Accounting')">Accounting</a>
                 <a href="#biology" onclick="addMajor(event, 'Biology')">Biology</a>
                 <a href="#business" onclick="addMajor(event, 'Business')">Business</a>

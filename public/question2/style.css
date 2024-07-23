@@ -1,0 +1,378 @@
+.ur {
+    font-weight: 600;
+}
+.club-at {
+    font-weight: 600;
+    font-family: "Neulis";
+    color: #000;
+}
+.ur-club-at-container {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    line-height: 30.5px;
+    display: inline-block;
+}
+.logo-top {
+    position: absolute;
+    top: 83px;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 31px;
+}
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 160px);
+    border-radius: 100px;
+    background-color: #ece7e1;
+    width: 320px;
+    height: 8px;
+    overflow: hidden;
+}
+.frame-item {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 160px);
+    border-radius: 100px;
+    background-color: #e63a26;
+    width: 47px;
+    height: 8px;
+    overflow: hidden;
+}
+.frame-parent {
+    position: absolute;
+    top: 143px;
+    left: 55px;
+    width: 320px;
+    height: 8px;
+}
+.div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.number {
+    width: 26.1px;
+    position: relative;
+    height: 79.3px;
+    font-size: 70px;
+}
+.hey-there-scarlet {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    line-height: 40.54px;
+    display: inline-block;
+}
+.title {
+    width: 288.5px;
+    position: relative;
+    height: 89.2px;
+    font-size: 36.06px;
+    color: #fff;
+}
+.span {
+    font-size: 20px;
+}
+.select {
+    position: relative;
+    line-height: 40.63px;
+    font-size: 20px;
+
+}
+.uiwdown-icon {
+    width: 20px;
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.dropdown {
+    align-self: stretch;
+    border-radius: 10px;
+    background-color: #fcf8f6;
+    border: 1px solid #e1dcd8;
+    box-sizing: border-box;
+    height: 51.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5.4px 36px;
+    gap: 147px;
+    color: #cdcbc8;
+    cursor: pointer;
+
+}
+.accounting {
+    position: relative;
+    line-height: 30px;
+}
+.accounting-wrapper {
+    width: 218px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.frame-wrapper1:hover {
+    width: 260px;
+    border-radius: 8px;
+    background-color: #efe8e3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 19px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+}
+.frame-wrapper1 {
+    width: 260px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 19px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+}
+.frame-div {
+    width: 288px;
+    border-radius: 10px;
+    background-color: #fcf8f6;
+    border: 1px solid #e1dcd8;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14px 0px;
+    gap: 10px;
+    color: #000;
+    font-size: 18px;
+    max-height: 200px; /* Limit height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    cursor: pointer;
+    width: 100%;
+}
+.number-parent {
+    position: absolute;
+    top: 68px;
+    left: 31px;
+    width: 288.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23.4px;
+}
+.leaf-icon {
+    position: absolute;
+    top: 55.09px;
+    left: 253.09px;
+    width: 62.2px;
+    height: 62.2px;
+    object-fit: contain;
+}
+.frame-container {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 175px);
+    border-radius: 20px;
+    background-color: #e63a26;
+    border: 1px solid #ebe5df;
+    box-sizing: border-box;
+    width: 350px;
+    height: 575px;
+    overflow: hidden;
+}
+.soft-star-icon {
+    position: absolute;
+    top: 67px;
+    left: 169px;
+    width: 72.5px;
+    height: 72.5px;
+    object-fit: contain;
+}
+.frame-group {
+    position: absolute;
+    top: 208px;
+    left: calc(50% - 175px);
+    border-radius: 20px;
+    background-color: #e63a26;
+    border: 1px solid #ebe5df;
+    box-sizing: border-box;
+    width: 350px;
+    height: 575px;
+    overflow: hidden;
+    /* font-size: 70px; */
+    color: #fcf8f6;
+}
+.rivet-iconsarrow-up {
+    position: absolute;
+    top: 855px;
+    left: 47px;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.INTRO {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    width: 430px;
+    height: 932px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 30px;
+    color: #e63a26;
+    font-family: 'Neulis Alt-Regular';
+}
+
+.hidden {
+    display: none;
+}
+
+.uiwdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.uiwdown-icon.rotated {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    align-self: stretch;
+    border-radius: 10px;
+    background-color: #fcf8f6;
+    border: 1px solid #e1dcd8;
+    box-sizing: border-box;
+    height: 51.8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5.4px 10px; /* Adjust padding */
+    color: #cdcbc8;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+.dropdown .select {
+    flex: 1; /* Makes sure input takes up available space */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.dropdown .select input {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #cdcbc8;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px; /* Adjust padding to ensure proper spacing */
+    margin-right: 30px; /* Add space for the arrow icon */
+    overflow: hidden; /* Ensures text is cut off before the icon */
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin-left: 20px;
+}
+
+.dropdown .select input::placeholder {
+    color: #cdcbc8;
+}
+
+.uiwdown-icon {
+    position: absolute;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.uiwdown-icon.rotated {
+    transform: rotate(180deg);
+}
+
+.dropdown .select input:focus {
+    outline: none;
+}
+
+.dropdown .select input[readonly] {
+    background-color: #fcf8f6; /* Matches the background color of your dropdown */
+    cursor: default; /* Show a default cursor to indicate it's not editable */
+    color: #cdcbc8; /* Style the text color as desired */
+}
+
+.checkbox {
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+    position: relative; /* Added for positioning the checkmark inside */
+    margin-left: auto; /* Align to the right of the frame-wrapper1 */
+    margin-right: 10px; /* Space from the right edge */
+}
+
+.checkmark {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: transparent;
+    position: absolute; /* Position the checkmark inside the checkbox */
+    top: 0;
+    left: 0;
+    display: none; /* Hide by default */
+}
+
+
+.checkmark.selected {
+    display: block; /* Show when selected */
+}
+
+.arrow-icon {
+    width: 33px;
+    position: relative;
+    height: 33px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    }
+    .arrow-parent {
+    position: absolute;
+    top: 853px;
+    left: calc(50% - 171.79px);
+    width: 341.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 284px;
+}
+
+#forwardArrow {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);  
+}

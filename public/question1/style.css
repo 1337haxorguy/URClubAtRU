@@ -1,0 +1,179 @@
+.ur {
+    font-weight: 600;
+}
+.club-at {
+    font-weight: 600;
+    font-family: "Neulis";
+    color: #000;
+}
+.ur-club-at-container {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    line-height: 30.5px;
+    display: inline-block;
+}
+.logo-top {
+    position: absolute;
+    top: 83px;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 31px;
+}
+.instance-child {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 160px);
+    border-radius: 100px;
+    background-color: #ece7e1;
+    width: 320px;
+    height: 8px;
+    overflow: hidden;
+}
+.instance-item {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 160px);
+    border-radius: 100px;
+    background-color: #e63a26;
+    width: 23px;
+    height: 8px;
+    overflow: hidden;
+}
+.frame-parent {
+    position: absolute;
+    top: 143px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 8px;
+}
+.div1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 78.54px;
+    font-weight: 300;
+}
+.number {
+    width: 26.1px;
+    position: relative;
+    height: 79.3px;
+}
+.hey-there-scarlet {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    line-height: 40.54px;
+    display: inline-block;
+}
+.title {
+    width: 288.5px;
+    position: relative;
+    height: 89.2px;
+    font-size: 36.06px;
+    color: #fff;
+    font: "";
+}
+.text {
+    position: relative;
+    line-height: 36.63px;
+    font-weight: 600;
+}
+.button {
+    width: 288.5px;
+    border-radius: 9.01px;
+    background-color: #fcf8f6;
+    height: 45.1px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4.9px 32.6px;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #000; /* Change background color on hover */
+    color: #fcf8f6; /* Change text color on hover */
+}
+
+.button-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14.4px;
+    font-size: 14.42px;
+    color: #000;
+}
+.number-parent {
+    position: absolute;
+    top: 68px;
+    left: 30px;
+    width: 288.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 23.4px;
+}
+.stairs-1-icon {
+    position: absolute;
+    top: 40.36px;
+    left: 185.63px;
+    width: 57.7px;
+    height: 57.7px;
+    object-fit: contain;
+}
+.arc-icon {
+    position: absolute;
+    top: 101px;
+    left: 243px;
+    width: 64.2px;
+    height: 43.1px;
+    object-fit: contain;
+}
+.frame-group {
+    position: absolute;
+    top: 208px;
+    left: calc(50% - 175px);
+    border-radius: 20px;
+    background-color: #e63a26;
+    border: 1px solid #ebe5df;
+    box-sizing: border-box;
+    width: 350px;
+    height: 575px;
+    overflow: hidden;
+    font-size: 70px;
+    color: #fcf8f6;
+}
+.INTRO {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    width: 430px;
+    height: 932px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 30px;
+    color: #e63a26;
+    font-family: 'Neulis Alt-Regular';
+    
+}
+
+.rivet-iconsarrow-up {
+    position: absolute;
+    top: 855px;
+    left: 47px;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    object-fit: contain;
+}
+    

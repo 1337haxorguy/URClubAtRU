@@ -1,0 +1,76 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Set up body to center content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Full-screen containers */
+.INTRO {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefbf7;
+    overflow: hidden; /* Ensure overflow is hidden */
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: 'Neulis Alt-SemiBold';
+    src: url('/assets/fonts/NeulisAlt-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neulis-SemiBold';
+    src: url('/assets/fonts/Neulis-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neulis Alt-Regular';
+    src: url('/assets/fonts/NeulisAlt-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neulis';
+    src: url('/assets/fonts/Neulis-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Media Queries for responsive design */
+@media (min-width: 431px) {
+    .INTRO {
+        max-width: 430px;
+    }
+}
+
+@media (min-width: 541px) {
+    .INTRO {
+        max-width: 540px;
+    }
+}
+
+/* Ensure the image is not distorted */
+.INTRO .pills {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
