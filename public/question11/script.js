@@ -7,11 +7,15 @@ document.querySelectorAll('.button').forEach(button => {
         this.classList.add('selected');
         
         // Save the year in local storage
-        const year = this.getAttribute('data-year');
-        localStorage.setItem('userYear', year );
+        const year = this.getAttribute('greek-life');
+        localStorage.setItem('WantsGreekLife', year );
         
         // Log the saved year for testing purposes
-        console.log('Saved year:', year);
         
     });
 });
+
+function skip() {
+    location.href = "/question12"
+    localStorage.setItem('WantsGreekLife',"none")
+}

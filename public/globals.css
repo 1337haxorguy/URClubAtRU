@@ -55,6 +55,14 @@ body {
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Neulis Alt';
+    src: url('/assets/fonts/NeulisAlt-Light.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Media Queries for responsive design */
 @media (min-width: 431px) {
     .INTRO {

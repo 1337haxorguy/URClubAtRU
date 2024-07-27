@@ -4,9 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const arrowIcon = document.querySelector('.uiwdown-icon');
     const inputField = document.getElementById('myInput');
     const forwardArrow = document.getElementById('forwardArrow');
+    const skipButton = document.getElementById('skip');
+    const dropdowns = document.querySelectorAll('.frame-wrapper1');
+
+
 
     // Array to store selected majors
-    let selectedMajors = [];
+    let selectedMinors = [];
 
     // Function to toggle readonly state based on placeholder
     function updateReadOnlyState() {
@@ -30,14 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     checkbox.classList.remove('selected');
                     console.log("selected removed");
                     // Remove major from the array
-                    selectedMajors = selectedMajors.filter(item => item !== major);
+                    selectedMinors = selectedMinors.filter(item => item !== major);
                 } else {
                     checkbox.classList.add('selected');
                     console.log("selected added");
                     // Add major to the array
-                    selectedMajors.push(major);
+                    selectedMinors.push(major);
                 }
-                console.log("Selected Majors:", selectedMajors);
+                console.log("Selected Careers:", selectedMinors);
             }
         });
     });
@@ -50,10 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
             inputField.placeholder = "Select";
             inputField.value = ""; // Clear the value
             updateReadOnlyState();
+            showSkipButton();
         } else {
             inputField.placeholder = "Search";
             inputField.focus();
             updateReadOnlyState();
+            hideSkipButton();
         }
     }
 
@@ -75,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to save selected majors to local storage
     function saveSelectedMajors() {
-        localStorage.setItem('major', selectedMajors);
-        console.log("Major data saved:", majorData);
+        localStorage.setItem('career', selectedMinors);
+        console.log("Career data saved:", majorData);
 
     }
 
@@ -98,4 +104,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial check to ensure read-only state is set correctly
     updateReadOnlyState();
+
+    function hideSkipButton() {
+        skipButton.classList.add('hidden');
+    }
+
+    function showSkipButton() {
+        // Check if all dropdowns are closed before showing the skip button
+        let allClosed = true;
+        dropdowns.forEach(dropdown => {
+            if (dropdown.classList.contains('open')) {
+                allClosed = false;
+            }
+        });
+        if (allClosed) {
+            skipButton.classList.remove('hidden');
+        }
+    }
+
 });
+
+function skip() {
+    location.href = "/question5"
+    localStorage.setItem('career',"none")
+}

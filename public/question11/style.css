@@ -57,7 +57,6 @@
     line-height: 78.54px;
     font-weight: 300;
     font-family: "Neulis Alt";
-
 }
 
 .number {
@@ -76,10 +75,12 @@
 .title {
     width: 288.5px;
     position: relative;
+    margin-top: -20px;
     height: 89.2px;
     font-size: 36.06px;
     color: #fff;
-    font: "";
+    font-family: 'Neulis Alt';
+    
 }
 .text {
     position: relative;
@@ -107,6 +108,7 @@
 }
 
 .button-parent {
+    margin-top: 23px;
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -205,4 +207,13 @@
 #forwardArrow {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
+}
+.skip {
+    position: absolute;
+    top: 513px;
+    left: 153px;
+    font-size: 18px;
+    text-decoration: underline;
+    line-height: 40.54px;
+    color: #fff;
 }

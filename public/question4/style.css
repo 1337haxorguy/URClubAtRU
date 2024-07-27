@@ -110,6 +110,7 @@
     gap: 147px;
     color: #cdcbc8;
     cursor: pointer;
+    margin-top: 40px;
 
 }
 .accounting {
@@ -375,4 +376,49 @@
 #forwardArrow {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
+}
+
+.lightning-2-icon {
+    position: absolute;
+    top: 40px;
+    left: 169px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.leaf-icon {
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    width: 72.5px;
+    height: 72.5px;
+    object-fit: contain;
+}
+
+.skip {
+    position: absolute;
+    top: 513px;
+    left: 153px;
+    font-size: 18px;
+    text-decoration: underline;
+    line-height: 40.54px;
+    color: #fff;
+}
+.stairs-2 {
+    position: absolute;
+    top: 66px;
+    left: 190px;
+    width: 86.6px;
+    height: 86.6px;
+    object-fit: contain;
+    }
+
+.rhode-island {
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    width: 62.9px;
+    height: 79.2px;
+    object-fit: contain;
 }

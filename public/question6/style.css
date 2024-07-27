@@ -55,7 +55,8 @@
     line-height: 78.54px;
     font-weight: 300;
     font-family: "Neulis Alt";
-}
+
+    }
 .number {
     width: 26.1px;
     position: relative;
@@ -65,12 +66,15 @@
 .hey-there-scarlet {
     position: absolute;
     width: 100%;
-    top: 0%;
+    top: -40px;
     left: 0%;
     line-height: 40.54px;
+    font-size: 30.31px;
+
     display: inline-block;
 }
 .title {
+    margin-top: 15px;
     width: 288.5px;
     position: relative;
     height: 89.2px;
@@ -99,7 +103,7 @@
     background-color: #fcf8f6;
     border: 1px solid #e1dcd8;
     box-sizing: border-box;
-    height: 51.8px;
+    height: 54px;
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
@@ -110,6 +114,7 @@
     gap: 147px;
     color: #cdcbc8;
     cursor: pointer;
+    margin-top: 70px;
 
 }
 .accounting {
@@ -163,7 +168,7 @@
     gap: 10px;
     color: #000;
     font-size: 18px;
-    max-height: 200px; /* Limit height */
+    max-height: 150px; /* Limit height */
     overflow-y: scroll; /* Enable vertical scrolling */
     cursor: pointer;
     width: 100%;
@@ -179,14 +184,6 @@
     justify-content: flex-start;
     gap: 23.4px;
 }
-.leaf-icon {
-    position: absolute;
-    top: 55.09px;
-    left: 253.09px;
-    width: 62.2px;
-    height: 62.2px;
-    object-fit: contain;
-}
 .frame-container {
     position: absolute;
     top: 0px;
@@ -198,14 +195,6 @@
     width: 350px;
     height: 575px;
     overflow: hidden;
-}
-.soft-star-icon {
-    position: absolute;
-    top: 67px;
-    left: 169px;
-    width: 72.5px;
-    height: 72.5px;
-    object-fit: contain;
 }
 .frame-group {
     position: absolute;
@@ -326,14 +315,13 @@
 }
 
 .checkbox {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
     border-radius: 2px;
     border: 1.5px solid #000;
     box-sizing: border-box;
     position: relative; /* Added for positioning the checkmark inside */
     margin-left: auto; /* Align to the right of the frame-wrapper1 */
-    margin-right: 10px; /* Space from the right edge */
 }
 
 .checkmark {
@@ -347,7 +335,6 @@
     display: none; /* Hide by default */
 }
 
-
 .checkmark.selected {
     display: block; /* Show when selected */
 }
@@ -359,7 +346,7 @@
     overflow: hidden;
     flex-shrink: 0;
     object-fit: contain;
-    }
+}
     .arrow-parent {
     position: absolute;
     top: 853px;
@@ -376,3 +363,93 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
 }
+
+.lightning-2-icon {
+    position: absolute;
+    top: 40px;
+    left: 169px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.leaf-icon {
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    width: 72.5px;
+    height: 72.5px;
+    object-fit: contain;
+}
+
+.skip {
+    position: absolute;
+    top: 513px;
+    left: 153px;
+    font-size: 18px;
+    text-decoration: underline;
+    line-height: 40.54px;
+    color: #fff;
+}
+.stairs-2 {
+    position: absolute;
+    top: 66px;
+    left: 190px;
+    width: 86.6px;
+    height: 86.6px;
+    object-fit: contain;
+    }
+
+.rhode-island {
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    width: 62.9px;
+    height: 79.2px;
+    object-fit: contain;
+}
+
+#Other {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px; /* Adjust padding to ensure proper spacing */
+    overflow: hidden; /* Ensures text is cut off before the icon */
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    white-space: nowrap; /* Prevents text from wrapping */
+    outline: none;
+    margin-left: -4px;
+    font-family: 'Neulis Alt-Regular';
+    margin-right: 10px;
+}
+
+.note-if-youd-container {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    line-height: 17px;
+    display: inline-block;
+    width: 277px;
+    }
+    .note-if-youd-prefer-not-to-s-wrapper {
+    position: absolute;
+    top: 230px;
+    left: -3px;
+    width: 278px;
+    height: 49px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #f5e8df;
+    }
+
+    .heart-2-icon {
+        position: absolute;
+        top: 42px;
+        left: 252px;
+        width: 59px;
+        height: 51.8px;
+        }
+        

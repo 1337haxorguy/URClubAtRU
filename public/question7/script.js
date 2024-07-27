@@ -7,11 +7,16 @@ document.querySelectorAll('.button').forEach(button => {
         this.classList.add('selected');
         
         // Save the year in local storage
-        const year = this.getAttribute('data-year');
-        localStorage.setItem('userYear', year );
+        const year = this.getAttribute('vert');
+        localStorage.setItem('verted?', year );
         
         // Log the saved year for testing purposes
-        console.log('Saved year:', year);
+        console.log('Verted', year);
         
     });
 });
+
+function skip() {
+    location.href = "/question8"
+    localStorage.setItem('verted?',"none")
+}

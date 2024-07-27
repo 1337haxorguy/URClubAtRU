@@ -18,6 +18,16 @@ app.use('/intro', express.static(path.join(__dirname, '../public/intro1')));
 app.use('/intro2', express.static(path.join(__dirname, '../public/intro2')));
 app.use('/question1', express.static(path.join(__dirname, '../public/question1')));
 app.use('/question2', express.static(path.join(__dirname, '../public/question2')));
+app.use('/question3', express.static(path.join(__dirname, '../public/question3')));
+app.use('/question4', express.static(path.join(__dirname, '../public/question4')));
+app.use('/question5', express.static(path.join(__dirname, '../public/question5')));
+app.use('/question6', express.static(path.join(__dirname, '../public/question6')));
+app.use('/question7', express.static(path.join(__dirname, '../public/question7')));
+app.use('/question8', express.static(path.join(__dirname, '../public/question8')));
+app.use('/question9', express.static(path.join(__dirname, '../public/question9')));
+app.use('/question10', express.static(path.join(__dirname, '../public/question10')));
+app.use('/question11', express.static(path.join(__dirname, '../public/question11')));
+app.use('/question12', express.static(path.join(__dirname, '../public/question12')));
 
 
 app.use(express.json());
@@ -92,6 +102,47 @@ app.get('/question1', (req, res) => {
 app.get('/question2', (req, res) => {
    res.sendFile(path.join(__dirname, '../public/question2', 'question2.html'));
 });
+
+app.get('/question3', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question3', 'question3.html'));
+});
+
+app.get('/question4', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question4', 'question4.html'));
+});
+
+app.get('/question5', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question5', 'question5.html'));
+});
+
+app.get('/question6', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question6', 'question6.html'));
+});
+
+app.get('/question7', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question7', 'question7.html'));
+});
+
+app.get('/question8', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question8', 'question8.html'));
+});
+
+app.get('/question9', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question9', 'question9.html'));
+});
+
+app.get('/question10', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question10', 'question10.html'));
+});
+
+app.get('/question11', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question11', 'question11.html'));
+});
+
+app.get('/question12', (req, res) => {
+   res.sendFile(path.join(__dirname, '../public/question12', 'question12.html'));
+});
+
 
 
 app.listen(port, () => {
