@@ -1,0 +1,124 @@
+.cylinder-icon {
+    position: absolute;
+    top: calc(50% - 446px);
+    left: calc(50% - 260px);
+    width: 520px;
+    height: 752px;
+}
+.ending-9-child {
+    position: absolute;
+    top: 475px;
+    left: 320px;
+    width: 349px;
+    height: 0px;
+}
+.div {
+    position: absolute;
+    top: 151.75px;
+    left: 178px;
+    letter-spacing: 0.04em;
+    line-height: 192.85px;
+    font-weight: 600;
+    color: #fcf8f6;
+}
+.insert-club-title {
+    position: absolute;
+    top: 19.75px;
+    left: 0px;
+    letter-spacing: 0.04em;
+    line-height: 47px;
+    font-weight: 600;
+    display: inline-block;
+    width: 366px;
+    height: 170px;
+}
+.insert-club-title-here-loren-i-wrapper {
+    position: absolute;
+    top: 325px;
+    left: calc(50% - 189px);
+    width: 379px;
+    height: 190px;
+    font-size: 40px;
+}
+.lorem-ipsum-dolor {
+    width: 335px;
+    position: relative;
+    letter-spacing: 0.04em;
+    line-height: 29px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.lorem-ipsum-dolor-sit-amet-co-wrapper {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 176px);
+    width: 352px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.ending-9-inner {
+    position: absolute;
+    top: 515px;
+    left: calc(50% - 176px);
+    width: 352px;
+    height: 87px;
+    font-size: 20px;
+    color: #000;
+}
+.next {
+    position: relative;
+    line-height: 39px;
+    font-weight: 600;
+}
+.next-wrapper {
+    position: absolute;
+    top: 802px;
+    left: calc(50% - 113px);
+    border-radius: 100px;
+    background-color: #000;
+    width: 226px;
+    height: 73px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 34px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.bookmark-icon {
+    position: absolute;
+    top: 236px;
+    left: 327px;
+    border-radius: 7px;
+    width: 79px;
+    height: 89.2px;
+    object-fit: contain;
+}
+.stairs-1-icon {
+    position: absolute;
+    top: 86px;
+    left: 23px;
+    border-radius: 8px;
+    width: 114.9px;
+    height: 114.9px;
+    object-fit: contain;
+}
+.ending-9 {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 130px;
+    color: #fff;
+    font-family: 'Neulis Alt';
+}
+

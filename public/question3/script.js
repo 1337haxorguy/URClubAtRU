@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const forwardArrow = document.getElementById('forwardArrow');
     const skipButton = document.getElementById('skip');
     const dropdowns = document.querySelectorAll('.frame-wrapper1');
+    const hiddenInput = document.getElementById('hiddenInput');
+
 
 
 
@@ -32,11 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (checkbox) {
                 if (checkbox.classList.contains('selected')) {
                     checkbox.classList.remove('selected');
+                    wrapper.classList.remove('selected');
+
                     console.log("selected removed");
                     // Remove major from the array
                     selectedMinors = selectedMinors.filter(item => item !== major);
                 } else {
                     checkbox.classList.add('selected');
+                    wrapper.classList.add('selected');
+
                     console.log("selected added");
                     // Add major to the array
                     selectedMinors.push(major);
@@ -50,17 +56,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleDropdown() {
         frameDiv.classList.toggle('hidden');
         arrowIcon.classList.toggle('rotated');
-        if (frameDiv.classList.contains('hidden')) {
-            inputField.placeholder = "Select";
-            inputField.value = ""; // Clear the value
-            updateReadOnlyState();
-            showSkipButton();
-        } else {
+        if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
-            inputField.focus();
-            updateReadOnlyState();
-            hideSkipButton();
+
+            // Show hidden input, focus it, and then hide it again
+            hiddenInput.style.visibility = 'visible';
+            hiddenInput.focus();
+            setTimeout(() => {
+                hiddenInput.style.visibility = 'hidden';
+                inputField.focus(); // Focus back to original input
+            }, 100); // Adjust delay as needed
+        } else {
+            inputField.placeholder = "Select";
+            inputField.value = "";
         }
+        updateReadOnlyState();
     }
 
     // Function to filter items
@@ -81,8 +91,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to save selected majors to local storage
     function saveSelectedMajors() {
-        localStorage.setItem('minor', selectedMinors);
-
+        // Create a new array to store the final selection
+        let finalSelection = [];
+    
+        // Add all selected items from the predefined list, ensuring they're not empty
+        selectedMinors.forEach(sport => {
+            if (sport.trim() !== "") {
+                finalSelection.push(sport.trim());
+            }
+        });
+        
+        // Save the array to localStorage
+        localStorage.setItem('minor', JSON.stringify(finalSelection));
+        console.log("Minors:", finalSelection);
     }
 
     // Event listeners

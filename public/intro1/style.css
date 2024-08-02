@@ -1,14 +1,8 @@
 .INTRO {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     width: 430px;
     height: 932px;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 44px;
-    padding: 62px 49px;
-    position: relative;
-    background-color: #fbf7f6;
+    background-color: #fcf8f6;
 }
 
 .INTRO .frame {
@@ -40,7 +34,7 @@
     left: -12px;
 }
 
-.INTRO .UR-club-instagram {
+.UR-club-instagram {
     position: absolute;
     width: 202px;
     height: 202px;
@@ -65,7 +59,7 @@
     line-height: normal;
 }
 
-.INTRO .UR-club-at-instagram {
+.UR-club-at-instagram {
     position: absolute;
     width: 202px;
     height: 194px;
@@ -141,7 +135,6 @@
     margin-top: -2px;
     font-family: "Neulis Alt-Regular", Helvetica;
     font-weight: 400;
-    color: #ffffff;
     font-size: 20.3px;
     text-align: center;
     letter-spacing: 0;

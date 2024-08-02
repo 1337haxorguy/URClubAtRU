@@ -20,3 +20,4 @@ function skip() {
     location.href = "/question8"
     localStorage.setItem('verted?',"none")
 }
+

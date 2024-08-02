@@ -7,7 +7,7 @@
     color: #000;
 }
 .ur-club-at-container {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0%;
     left: 0%;
@@ -192,7 +192,7 @@
     top: 0px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
+    background-color: #c8b53f;
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
@@ -201,26 +201,27 @@
 }
 .soft-star-icon {
     position: absolute;
-    top: 67px;
-    left: 169px;
-    width: 72.5px;
-    height: 72.5px;
+    top: 50px;
+    left: 225px;
     object-fit: contain;
+    height: 92px;
+    width: 92px
+    /* max-width: 100%; */
 }
 .frame-group {
     position: absolute;
     top: 208px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
     height: 575px;
     overflow: hidden;
-    /* font-size: 70px; */
     color: #fcf8f6;
-}
+} 
+
+ 
 .rivet-iconsarrow-up {
     position: absolute;
     top: 855px;
@@ -230,17 +231,18 @@
     overflow: hidden;
     object-fit: contain;
 }
+
 .INTRO {
-    width: 100%;
+    width: 430px;
+    /* height: 932px;  */
     position: relative;
     background-color: #fcf8f6;
-    width: 430px;
-    height: 932px;
     overflow: hidden;
     text-align: left;
     font-size: 30px;
     color: #e63a26;
     font-family: 'Neulis Alt-Regular';
+    transform-origin: center;
 }
 
 .hidden {
@@ -359,10 +361,11 @@
     overflow: hidden;
     flex-shrink: 0;
     object-fit: contain;
-    }
-    .arrow-parent {
+}
+
+.arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -376,3 +379,4 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
 }
+

@@ -191,7 +191,7 @@
     top: 0px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
+    background-color: #6db8be;
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
@@ -351,7 +351,7 @@
 }
     .arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -396,7 +396,7 @@
 .stairs-2 {
     position: absolute;
     top: 50px;
-    left: 190px;
+    left: 225px;
     width: 86.6px;
     height: 86.6px;
     object-fit: contain;
@@ -414,7 +414,7 @@
 #Other {
     border: none;
     background: transparent;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
     width: 100%;
     box-sizing: border-box;

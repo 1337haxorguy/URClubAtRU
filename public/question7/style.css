@@ -132,8 +132,8 @@
     position: absolute;
     top: 40.36px;
     left: 185.63px;
-    width: 57.7px;
-    height: 57.7px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 .arc-icon {
@@ -193,7 +193,7 @@
     }
     .arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -215,4 +215,9 @@
     text-decoration: underline;
     line-height: 40.54px;
     color: #fff;
+}
+.selected {
+    background-color: #000; /* Change background color on hover */
+    color: #fcf8f6; /* Change text color on hover */
+
 }

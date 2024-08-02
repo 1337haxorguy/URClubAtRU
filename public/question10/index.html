@@ -6,8 +6,21 @@
     <link rel="stylesheet" href="../globals.css">
     <link rel="stylesheet" href="./style.css">
     <title>UR Club at RU</title>
+    <style>
+        /* Hide the hidden input field initially */
+        #hiddenInput {
+            position: absolute;
+            top: -1000px; /* Position off-screen */
+            left: -1000px;
+            opacity: 0;
+            pointer-events: none; /* Prevent interaction */
+        }
+    </style>
+
 </head>
 <body>
+    <input type="text" id="hiddenInput">
+
     <div class="INTRO">
         <div class="logo-top">
             <div class="ur-club-at-container">
@@ -62,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="stairs-2" alt="Flag" src="../assets/img/Flag.svg">
+                <img class="stairs-2"  src="../assets/img/fluent-emoji-high-contrast_musical-note.svg">
                 <div class="skip" id="skip" onclick="skip()">Skip</div>
             </div>
         </div>

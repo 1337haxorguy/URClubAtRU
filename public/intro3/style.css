@@ -1,0 +1,106 @@
+.urclubatru-designs-wallpaper {
+    position: absolute;
+    top: calc(50% - 466px);
+    left: calc(50% - 215px);
+    width: 430px;
+    height: 932px;
+    object-fit: cover;
+    
+}
+.start {
+    position: relative;
+}
+.rivet-iconsarrow-up {
+    width: 18px;
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.start-parent {
+    position: absolute;
+    top: 710px;
+    left: calc(50% - 86px);
+    border-radius: 10px;
+    background-color: #000;
+    width: 171px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    gap: 9px;
+    cursor: pointer;
+}
+.before-we-begin {
+    align-self: stretch;
+    position: relative;
+    width: 100%;
+    position: relative;
+    font-size: 40px;
+    line-height: 39px;
+    font-weight: 600;
+    font-family: 'Neulis Alt-Regular';
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    }
+.we-want-to {
+    font-family: 'Neulis Alt';
+}
+.we-dont-collect {
+    font-weight: 600;
+    font-family: 'Neulis Alt-Regular';
+}
+.we-want-to-assure-you-that-we {
+    margin: 0;
+}
+.we-want-to-container {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+    line-height: 27px;
+}
+.before-we-begin-parent {
+    position: absolute;
+    top: calc(50% - 184px);
+    left: calc(50% - 172px);
+    border-radius: 20px;
+    background-color: #fcf8f6;
+    width: 344px;
+    height: 384px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    box-sizing: border-box;
+    gap: 20px;
+    text-align: left;
+    font-size: 40px;
+    color: #000;
+}
+.intro-3-child {
+    position: absolute;
+    top: 93px;
+    left: calc(50% + 49px);
+    width: 219.1px;
+    height: 167.3px;
+}
+.intro-3 {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20.34px;
+    color: #fff;
+    font-family: 'Neulis Alt';
+}
+

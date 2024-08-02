@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.frame-wrapper1');
     const otherInput = document.getElementById('Other'); // "Other" input field
     const otherWrapper = otherInput.parentElement; // Parent element of "Other" input
+    const hiddenInput = document.getElementById('hiddenInput');
+
 
     // Array to store selected minors
     let selectedMinors = [];
@@ -32,10 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
             if (checkbox) {
                 if (checkbox.classList.contains('selected')) {
                     checkbox.classList.remove('selected');
+                    wrapper.classList.remove('selected');
+
                     // Remove major from the array
                     selectedMinors = selectedMinors.filter(item => item !== major);
                 } else {
                     checkbox.classList.add('selected');
+                    wrapper.classList.add('selected');
+
                     // Add major to the array
                     selectedMinors.push(major);
                 }
@@ -47,17 +53,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleDropdown() {
         frameDiv.classList.toggle('hidden');
         arrowIcon.classList.toggle('rotated');
-        if (frameDiv.classList.contains('hidden')) {
-            inputField.placeholder = "Select";
-            inputField.value = ""; // Clear the value
-            updateReadOnlyState();
-            showSkipButton();
-        } else {
+        if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
-            inputField.focus();
-            updateReadOnlyState();
-            hideSkipButton();
+
+            // Show hidden input, focus it, and then hide it again
+            hiddenInput.style.visibility = 'visible';
+            hiddenInput.focus();
+            setTimeout(() => {
+                hiddenInput.style.visibility = 'hidden';
+                inputField.focus(); // Focus back to original input
+            }, 100); // Adjust delay as needed
+        } else {
+            inputField.placeholder = "Select";
+            inputField.value = "";
         }
+        updateReadOnlyState();
     }
 
     // Function to filter items
@@ -79,20 +89,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to save selected minors to local storage
     function saveSelectedMinors() {
+        // Create a new array to store the final selection
+        let finalSelection = [];
+    
+        // Add all selected items from the predefined list, ensuring they're not empty
+        selectedMinors.forEach(sport => {
+            if (sport.trim() !== "") {
+                finalSelection.push(sport.trim());
+            }
+        });
+    
         // Check if the "Other" input field was selected
         const isOtherSelected = otherWrapper.querySelector('.checkmark') && otherWrapper.querySelector('.checkmark').classList.contains('selected');
         
-        // Add "Other" value to the selectedMinors array if it's not already present and if the "Other" input is selected
+        // Add "Other" value to the finalSelection array only if it's not empty and if the "Other" input is selected
         const otherValue = otherInput.value.trim();
-        if (isOtherSelected && otherValue) {
-            if (!selectedMinors.includes(otherValue)) {
-                selectedMinors.push(otherValue);
-            }
+        if (isOtherSelected && otherValue !== "") {
+            finalSelection.push(otherValue);
         }
-
-        const majorData = { selectedMinors };
-        localStorage.setItem('hobbies', selectedMinors);
-        console.log("Hobbies:", majorData);
+    
+        // Save the array to localStorage
+        localStorage.setItem('hobbies', JSON.stringify(finalSelection));
+        console.log("Hobbies:", finalSelection);
     }
 
     // Event listeners

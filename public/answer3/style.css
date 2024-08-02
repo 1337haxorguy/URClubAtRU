@@ -1,0 +1,134 @@
+.ending-8-child {
+    position: absolute;
+    top: -2px;
+    left: calc(50% - 215px);
+    width: 430px;
+    height: 881px;
+}
+.ending-8-item {
+    position: absolute;
+    top: 475px;
+    left: 320px;
+    width: 349px;
+    height: 0px;
+}
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 176px);
+    width: 352px;
+    height: 87px;
+}
+.ending-8-inner {
+    position: absolute;
+    top: 516px;
+    left: 39px;
+    width: 352px;
+    height: 87px;
+}
+.insert-club-title {
+    align-self: stretch;
+    position: relative;
+    width: 390px;
+    margin-left: 20px;
+    letter-spacing: 0.04em;
+    line-height: 47px;
+    font-weight: 600;
+}
+.lorem-ipsum-dolor {
+    width: 350px;
+    margin-left: -27px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    line-height: 29px;
+    font-weight: 600;
+    color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.insert-club-title-here-loren-i-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 23px;
+}
+.frame-div {
+    position: absolute;
+    top: 360px;
+    left: calc(50% - 215px + 35px);
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.next {
+    position: relative;
+    line-height: 39px;
+    font-weight: 600;
+}
+.next-wrapper {
+    position: absolute;
+    top: 802px;
+    left: calc(50% - 113px);
+    border-radius: 100px;
+    background-color: #000;
+    width: 226px;
+    height: 73px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 34px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.div {
+    position: absolute;
+    top: 135px;
+    left: calc(50% - 215px + 309px);
+    font-size: 130px;
+    letter-spacing: 0.04em;
+    line-height: 192.85px;
+    font-weight: 600;
+    color: #fcf8f6;
+}
+.arc-icon {
+    position: absolute;
+    top: 140px;
+    left: calc(50% - 215px - 67px);
+    border-radius: 10px;
+    width: 212px;
+    height: 142.2px;
+    object-fit: contain;
+}
+.star-icon {
+    position: absolute;
+    top: 119px;
+    left: calc(50% - 215px + 41px);
+    border-radius: 7px;
+    width: 143px;
+    height: 143px;
+}
+.ending-8 {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Neulis Alt-Regular';
+    justify-content: center;
+    align-items: center;
+}
+

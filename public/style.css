@@ -1,0 +1,136 @@
+.ur {
+    font-weight: 600;
+}
+.club {
+    font-weight: 600;
+    font-family: Neulis;
+}
+.club-at {
+    color: #000;
+}
+.ur-club-at-container {
+    position: absolute;
+    top: calc(50% - 29px);
+    left: calc(50% - 153px);
+    font-size: 80px;
+    line-height: 70px;
+    display: inline-block;
+    width: 311px;
+    color: #e63a26;
+}
+.find-a-rutgers {
+    position: absolute;
+    top: 614px;
+    left: calc(50% - 134px);
+    display: inline-block;
+    width: 273px;
+    height: 51px;
+}
+.take-the-quiz {
+    position: relative;
+}
+.rivet-iconsarrow-up {
+    width: 18px;
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.take-the-quiz-parent {
+    position: absolute;
+    top: 716px;
+    left: calc(50% - 111px);
+    border-radius: 10px;
+    background-color: #000;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    gap: 9px;
+    cursor: pointer;
+    color: #fff;
+}
+.intro-1-child {
+    position: absolute;
+    top: 175px;
+    left: -24px;
+    width: 191px;
+    height: 210.7px;
+}
+.intro-1-item {
+    position: absolute;
+    top: 87px;
+    left: 153px;
+    width: 328.5px;
+    height: 328.5px;
+}
+.intro-1-inner {
+    position: absolute;
+    top: 15.3px;
+    left: 138.71px;
+    width: 310.575px;
+    height: 324.75px;
+    object-fit: contain;
+    }
+.lucidesparkle-icon {
+    position: absolute;
+    top: 8px;
+    left: 193.27px;
+    width: 129px;
+    height: 129px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.frame-child {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 23.9px;
+    flex-shrink: 0;
+}
+.dd {
+    align-self: stretch;
+    position: relative;
+    line-height: 14.96px;
+}
+.frame-parent {
+    position: absolute;
+    top: 859px;
+    left: calc(50% - 38px);
+    width: 76.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px 22.3px;
+    box-sizing: border-box;
+    gap: 3.2px;
+    text-align: left;
+    font-size: 14.72px;
+}
+.summertime-sadness-icon {
+    position: absolute;
+    top: -65.46px;
+    left: -58.46px;
+    width: 233.7px;
+    height: 233.7px;
+    object-fit: contain;
+}
+.INTRO {
+    position: relative;
+    width: 430px;
+    height: 932px;
+    background-color: #fcf8f6;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Neulis Alt-Regular';
+}
+

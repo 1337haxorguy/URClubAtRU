@@ -75,7 +75,7 @@
 .title {
     width: 288.5px;
     position: relative;
-    margin-top: -20px;
+    margin-top: 0px;
     height: 89.2px;
     font-size: 36px;
     color: #fff;
@@ -115,7 +115,7 @@
     gap: 147px;
     color: #cdcbc8;
     cursor: pointer;
-    margin-top: 60px;
+    margin-top: 70px;
 
 }
 .accounting {
@@ -169,7 +169,7 @@
     gap: 10px;
     color: #000;
     font-size: 18px;
-    max-height: 200px; /* Limit height */
+    max-height: 150px; /* Limit height */
     overflow-y: scroll; /* Enable vertical scrolling */
     cursor: pointer;
     width: 100%;
@@ -190,7 +190,7 @@
     top: 0px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
+    background-color: #c8b53f;
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
@@ -350,7 +350,7 @@
 }
     .arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -394,12 +394,12 @@
 }
 .stairs-2 {
     position: absolute;
-    top: 50px;
-    left: 190px;
+    top: 45px;
+    left: 225px;
     width: 86.6px;
     height: 86.6px;
     object-fit: contain;
-    }
+}
 
 .rhode-island {
     position: absolute;
@@ -413,7 +413,7 @@
 #Other {
     border: none;
     background: transparent;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
     width: 100%;
     box-sizing: border-box;

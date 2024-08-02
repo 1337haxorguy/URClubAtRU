@@ -1,0 +1,153 @@
+.next {
+    position: relative;
+    line-height: 39px;
+    font-weight: 600;
+}
+.next-wrapper {
+    position: absolute;
+    top: 802px;
+    left: calc(50% - 113px);
+    border-radius: 100px;
+    background-color: #000;
+    width: 226px;
+    height: 73px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 34px;
+    box-sizing: border-box;
+}
+.ending-7-child {
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    width: 430px;
+    height: 773px;
+}
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 761px;
+}
+.frame-item {
+    position: absolute;
+    top: 289px;
+    left: 46px;
+    width: 359px;
+    height: 186px;
+}
+.frame-inner {
+    position: absolute;
+    top: 493px;
+    left: calc(50% - 176px);
+    width: 352px;
+    height: 87px;
+}
+.frame-div {
+    position: absolute;
+    top: 475px;
+    left: 46px;
+    width: 349px;
+    height: 0px;
+}
+.urclubatru-designs-wallpaper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 95.9px;
+    height: 108.4px;
+    object-fit: cover;
+}
+.ellipse {
+    position: absolute;
+    top: 77px;
+    left: 109px;
+    border-radius: 50%;
+    background-color: #fcf8f6;
+    width: 96px;
+    height: 96px;
+}
+.urclubatru-designs-wallpaper-parent {
+    position: absolute;
+    top: 98px;
+    /* left: 246px; */
+    left: calc(50% - 102.5px + 150px);
+
+    width: 205px;
+    height: 173px;
+}
+.frame-child1 {
+    position: absolute;
+    top: 109px;
+    left: 45px;
+    width: 51px;
+    height: 193px;
+}
+.div {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.04em;
+    line-height: 192.85px;
+    font-weight: 600;
+    display: inline-block;
+    height: 154px;
+    flex-shrink: 0;
+}
+.insert-club-title {
+    align-self: stretch;
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 0.04em;
+    line-height: 47px;
+    font-weight: 600;
+    color: #fff;
+}
+.lorem-ipsum-dolor {
+    width: 360px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    line-height: 29px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+}
+.parent {
+    position: absolute;
+    top: 152px;
+    /* left: calc(50% - 178.75px + 45px); */
+    left: calc(50% - 178.75px);
+
+    width: 357.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.frame-parent {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 100%;
+    height: 773px;
+    text-align: left;
+    font-size: 130px;
+    color: #fcf8f6;
+}
+.ending-7 {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Neulis Alt-Regular';
+}
+

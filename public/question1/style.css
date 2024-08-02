@@ -57,7 +57,6 @@
     line-height: 78.54px;
     font-weight: 300;
     font-family: "Neulis Alt";
-
 }
 
 .number {
@@ -79,7 +78,8 @@
     height: 89.2px;
     font-size: 36.06px;
     color: #fff;
-    font: "";
+    font-family: 'Neulis Alt';
+    
 }
 .text {
     position: relative;
@@ -107,6 +107,7 @@
 }
 
 .button-parent {
+    margin-top: 23px;
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -131,8 +132,8 @@
     position: absolute;
     top: 40.36px;
     left: 185.63px;
-    width: 57.7px;
-    height: 57.7px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 .arc-icon {
@@ -192,7 +193,7 @@
     }
     .arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -205,4 +206,18 @@
 #forwardArrow {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
+}
+.skip {
+    position: absolute;
+    top: 513px;
+    left: 153px;
+    font-size: 18px;
+    text-decoration: underline;
+    line-height: 40.54px;
+    color: #fff;
+}
+.selected {
+    background-color: #000; /* Change background color on hover */
+    color: #fcf8f6; /* Change text color on hover */
+
 }

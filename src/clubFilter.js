@@ -157,7 +157,7 @@ export function filterClubs(clubsData, filters, minMatches) {
                 }
                 
                 
-                if (key === 'major' || key == 'hobby' || key == 'ethnicity' || key == 'causes') {
+                if (key === 'major' || key == 'hobbies' || key == 'ethnicity' || key == 'causesPassionateAbout') {
                     if (variations.some(variation => {
                         const regex = new RegExp(`\\b${variation}\\b`, 'i');
                         return regex.test(club.name.toLowerCase()) || regex.test(club.description.toLowerCase());

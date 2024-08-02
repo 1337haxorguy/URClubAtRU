@@ -4,13 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const arrowIcon = document.querySelector('.uiwdown-icon');
     const inputField = document.getElementById('myInput');
     const forwardArrow = document.getElementById('forwardArrow');
+    const hiddenInput = document.getElementById('hiddenInput');
+
 
     // Array to store selected majors
     let selectedMajors = [];
 
-    // Function to toggle readonly state based on placeholder
     function updateReadOnlyState() {
-        if (inputField.placeholder === 'Select') {
+        if (frameDiv.classList.contains('hidden')) {
             inputField.setAttribute('readonly', true);
         } else {
             inputField.removeAttribute('readonly');
@@ -28,11 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (checkbox) {
                 if (checkbox.classList.contains('selected')) {
                     checkbox.classList.remove('selected');
+                    wrapper.classList.remove('selected');
+
                     console.log("selected removed");
                     // Remove major from the array
                     selectedMajors = selectedMajors.filter(item => item !== major);
                 } else {
                     checkbox.classList.add('selected');
+                    wrapper.classList.add('selected');
+
                     console.log("selected added");
                     // Add major to the array
                     selectedMajors.push(major);
@@ -42,19 +47,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
             
-    // Function to toggle dropdown visibility
     function toggleDropdown() {
         frameDiv.classList.toggle('hidden');
         arrowIcon.classList.toggle('rotated');
-        if (frameDiv.classList.contains('hidden')) {
-            inputField.placeholder = "Select";
-            inputField.value = ""; // Clear the value
-            updateReadOnlyState();
-        } else {
+        if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
-            inputField.focus();
-            updateReadOnlyState();
+
+            // Show hidden input, focus it, and then hide it again
+            hiddenInput.style.visibility = 'visible';
+            hiddenInput.focus();
+            setTimeout(() => {
+                hiddenInput.style.visibility = 'hidden';
+                inputField.focus(); // Focus back to original input
+            }, 100); // Adjust delay as needed
+        } else {
+            inputField.placeholder = "Select";
+            inputField.value = "";
         }
+        updateReadOnlyState();
     }
 
     // Function to filter items
@@ -75,14 +85,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to save selected majors to local storage
     function saveSelectedMajors() {
-        localStorage.setItem('major', selectedMajors);
-        console.log("Major data saved:", majorData);
-
+        // Create a new array to store the final selection
+        let finalSelection = [];
+    
+        // Add all selected items from the predefined list, ensuring they're not empty
+        selectedMajors.forEach(sport => {
+            if (sport.trim() !== "") {
+                finalSelection.push(sport.trim());
+            }
+        });
+    
+        // Save the array to localStorage
+        localStorage.setItem('major', JSON.stringify(finalSelection));
+        console.log("Majors:", finalSelection);
     }
 
     // Event listeners
     selectButton.addEventListener('click', function(event) {
-        event.stopPropagation(); // Prevent the click from propagating to the document
+        event.stopPropagation();
         toggleDropdown();
     });
 
@@ -92,10 +112,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     forwardArrow.addEventListener('click', function() {
         saveSelectedMajors();
-        // You can also redirect to the next page here if needed
-        // location.href = '/question1';
     });
 
-    // Initial check to ensure read-only state is set correctly
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
     updateReadOnlyState();
 });
+

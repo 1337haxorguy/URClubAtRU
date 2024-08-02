@@ -102,10 +102,6 @@
     box-sizing: border-box;
 }
 
-.button:hover {
-    background-color: #000; /* Change background color on hover */
-    color: #fcf8f6; /* Change text color on hover */
-}
 
 .button-parent {
     margin-top: 23px;
@@ -133,8 +129,8 @@
     position: absolute;
     top: 40.36px;
     left: 185.63px;
-    width: 57.7px;
-    height: 57.7px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 .arc-icon {
@@ -150,7 +146,7 @@
     top: 208px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
+    background-color: #c8b53f;
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
@@ -194,7 +190,7 @@
     }
     .arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -216,4 +212,10 @@
     text-decoration: underline;
     line-height: 40.54px;
     color: #fff;
+}
+
+.selected {
+    background-color: #000; /* Change background color on hover */
+    color: #fcf8f6; /* Change text color on hover */
+
 }

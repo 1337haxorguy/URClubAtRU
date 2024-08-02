@@ -1,0 +1,79 @@
+.loading {
+    color: #e63a26;
+    font-family: 'Neulis Alt-Regular';
+    
+
+}
+.sit-tight-your-container {
+    position: absolute;
+    top: 208px;
+    left: calc(50% - 159px);
+    line-height: 39px;
+    display: inline-block;
+    width: 318px;
+}
+.httpslottiefilescomanimat-icon {
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    width: 345.3px;
+    height: 404px;
+    object-fit: cover;
+    transform: translateX(-50%);
+}
+.ur {
+    line-height: 27.92px;
+    font-weight: 600;
+}
+.club-at {
+    line-height: 30.5px;
+    font-weight: 600;
+    font-family: "Neulis";
+    color: #000;
+}
+.ur-club-at-container {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    display: inline-block;
+}
+.logo-top {
+    position: absolute;
+    top: 145px;
+    left: calc(50% - 146px);
+    width: 293px;
+    height: 28.4px;
+    font-size: 30px;
+    color: #e63a26;
+}
+.configuring-data {
+    position: absolute;
+    top: 833px;
+    left: calc(50% - 125px);
+    font-size: 21.37px;
+    letter-spacing: 0.06em;
+    line-height: 21.79px;
+    color: #d5cec7;
+}
+.loading-screen {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-family: 'Neulis Alt-Regular';
+    background-color: #fcf8f6;
+    width: 430px;
+    height: 932px;
+}
+
+
+.INTRO {
+    overflow: hidden;
+    color: #e63a26;
+    
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="../globals.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neulis+Alt:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neulis:wght@600&display=swap" />
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="sit-tight-your-container">
+            <span>Sit tight, your club matches are </span>
+            <span class="loading">loading...</span>
+        </div>
+        <dotlottie-player class="httpslottiefilescomanimat-icon" src="https://lottie.host/ecd84637-3233-4b0f-8e83-1d757b54c0a7/DHh9Szaszb.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <div class="logo-top">
+            <div class="ur-club-at-container">
+                <span class="ur">ur </span>
+                <span class="club-at">club at </span>
+                <span class="ur">ru</span>
+            </div>
+        </div>
+        <div class="configuring-data">CONFIGURING DATA...</div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            async function fetchData() {
+                const parseJSONSafely = (item) => {
+                    try {
+                        return JSON.parse(item) || "";
+                    } catch (e) {
+                        return "";
+                    }
+                };
+
+                const localStorageData = {
+                    major: parseJSONSafely(localStorage.getItem('major')),
+                    userYear: localStorage.getItem('userYear') || "", 
+                    verted: localStorage.getItem('verted') || "",
+                    gender: parseJSONSafely(localStorage.getItem('gender')),
+                    minor: parseJSONSafely(localStorage.getItem('minor')),
+                    hobbies: parseJSONSafely(localStorage.getItem('hobbies')),
+                    career: parseJSONSafely(localStorage.getItem('career')),
+                    WantsGreekLife: localStorage.getItem('WantsGreekLife') || "",
+                    sports: parseJSONSafely(localStorage.getItem('sports')),
+                    causesPassionateAbout: parseJSONSafely(localStorage.getItem('causesPassionateAbout')),
+                    arts: parseJSONSafely(localStorage.getItem('arts')),
+                    religion: parseJSONSafely(localStorage.getItem('religion')),
+                    personality: parseJSONSafely(localStorage.getItem('personality')),
+                    ethnicity: parseJSONSafely(localStorage.getItem('ethnicity'))
+                };
+
+                const jsonString = JSON.stringify(localStorageData);
+
+                try {
+                    const response = await fetch('/filter-clubs', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: jsonString
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    console.log('Data fetched:', data); // Debugging: log the data
+
+                    // Parse and store filtered clubs
+                    localStorage.setItem('filteredClubs', JSON.stringify(data.filteredClubs));
+
+                    // Parse and store recommendations
+                    const recommendations = data.recommendations.split('\n').filter(item => item.trim() !== '');
+                    localStorage.setItem('recommendations', JSON.stringify(recommendations));
+
+                    window.location.href = '/answer1';
+                } catch (error) {
+                    console.error('Error fetching filtered clubs and recommendations:', error);
+                }
+            }
+
+            fetchData();
+        });
+    </script>
+</body>
+</html>

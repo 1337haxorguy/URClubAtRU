@@ -189,7 +189,7 @@
     top: 0px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
+    background-color: #6db8be;
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
@@ -349,7 +349,7 @@
 }
     .arrow-parent {
     position: absolute;
-    top: 853px;
+    top: 820px;
     left: calc(50% - 171.79px);
     width: 341.6px;
     display: flex;
@@ -412,7 +412,7 @@
 #Other {
     border: none;
     background: transparent;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
     width: 100%;
     box-sizing: border-box;
@@ -447,9 +447,9 @@
 
     .heart-2-icon {
         position: absolute;
-        top: 42px;
-        left: 252px;
+        top: 70px;
+        left: 240px;
         width: 59px;
         height: 51.8px;
-        }
+    }
         
