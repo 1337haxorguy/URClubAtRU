@@ -1,0 +1,338 @@
+.your-top-matched {
+    position: absolute;
+    top: 164px;
+    left: calc(50% - 170px);
+    /* left: 41px; */
+    font-size: 40px;
+    line-height: 43px;
+    font-weight: 600;
+    display: inline-block;
+    width: 272px;
+}
+.div {
+    width: 16px;
+    position: relative;
+    line-height: 43px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.creative-x {
+    width: 250px;
+    position: relative;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+    height: 25px; /* Fixed height to prevent expansion */
+
+}
+.parent {
+    align-self: stretch;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 8px;
+    gap: 24px;
+}
+.frame-parent {
+    position: absolute;
+    top: 325px;
+    left: calc(50% - 176px);
+    border-radius: 20px;
+    background-color: #fcf8f6;
+    width: 352px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 39px 32px;
+    box-sizing: border-box;
+    gap: 15px;
+    font-size: 40px;
+    color: #000;
+}
+.ur {
+    line-height: 27.92px;
+    font-weight: 600;
+}
+.club-at {
+    line-height: 27.92px;
+    font-weight: 600;
+    font-family: 'Neulis';
+}
+.ur-club-at-container {
+    position: absolute;
+    width: 81.13%;
+    top: 0%;
+    left: 18.87%;
+    display: inline-block;
+}
+.vector-icon {
+    position: absolute;
+    height: 71.43%;
+    width: 12.58%;
+    top: 14.29%;
+    right: 87.42%;
+    bottom: 14.29%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.ur-club-at-ru-parent {
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    width: 159px;
+    height: 28px;
+}
+.logo-top {
+    position: absolute;
+    top: 29px;
+    left: calc(50% - 156px);
+    width: 129px;
+    height: 28px;
+    font-size: 20px;
+}
+.download-image {
+    position: relative;
+    font-size: 11px;
+    line-height: 27.92px;
+    font-weight: 600;
+    color: #fcf8f6;
+    text-align: left;
+    }
+.material-symbolsdownload-icon {
+    width: 26px;
+    position: relative;
+    height: 26px;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding-left: 5px;
+}
+.download-image-parent {
+    position: absolute;
+    top: 810px;
+    left: 39px;
+    border-radius: 10px;
+    background-color: #000;
+    width: 182px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 31px;
+    box-sizing: border-box;
+    gap: 1px;
+}
+.phchat-fill-icon {
+    width: 14.9px;
+    position: relative;
+    height: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.give-feedback-parent {
+    position: absolute;
+    top: 810px;
+    left: 234px;
+    border-radius: 10px;
+    background-color: #000;
+    width: 157px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    gap: 3px;
+    cursor: pointer;
+}
+.urclubatru-designs-wallpaper {
+    position: absolute;
+    top: 0px;
+    left: -27px;
+    width: 185px;
+    height: 185px;
+    overflow: visible;
+}
+.butterfly-icon {
+    position: absolute;
+    top: 119px;
+    left: -62px;
+    width: 123.5px;
+    height: 126.5px;
+}
+.urclubatru-designs-wallpaper-parent {
+    position: absolute;
+    top: 56px;
+    left: calc(50% + 130px);
+    
+    /* left: 326px; */
+    width: 176.5px;
+    height: 185px;
+    overflow: visible;
+}
+.zig-zag-icon {
+    position: absolute;
+    top: 734px;
+    /* left: calc(50% - 120px); */
+        right: calc(50% - 230px);
+
+
+    /* left: 123px; */
+    width: 300px;
+    height: 29px;
+}
+.about-dd {
+    position: relative;
+    text-decoration: underline;
+    line-height: 27.92px;
+    width: 400px;
+}
+.frame-child {
+    align-self: stretch;
+    position: relative;
+    width: 50px;
+    overflow: hidden;
+    height: 20px;
+    flex-shrink: 0;
+}
+.frame-wrapper {
+    width: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px 18px;
+    box-sizing: border-box;
+    margin-left: -5px;
+}
+.about-dd-parent {
+    position: absolute;
+    top: 877px;
+    left: calc(50% - 75px);
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Neulis';
+    cursor: pointer;
+}
+.ending-6 {
+    width: 430px;
+    position: relative;
+    background-color: #e63a26;
+    height: 932px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #fcf8f6;
+    font-family: 'Neulis Alt-Regular';
+}
+
+.blackButton{
+    position: absolute;
+    left: calc(50% - 220px);
+}
+
+
+
+.download-image-parent {
+    position: absolute;
+    top: 810px;
+    left: 39px;
+    border-radius: 10px;
+    background-color: #000;
+    width: 182px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px; /* Reduced right padding */
+    box-sizing: border-box;
+    gap: 5px; /* Reduced gap between text and icon */
+}
+
+.parent {
+    margin-left: -15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically centers the content */
+    justify-content: flex-start; /* Aligns items horizontally to the left */
+    padding: 7px 8px;
+    gap: 10px; /* Adjust the gap between the number and text box */
+    height: 57px; /* Ensure this matches the height of .creative-x */
+    box-sizing: border-box; /* Ensure padding is included within the height */
+}
+
+.creative-x {
+    margin-left: 10px;
+    width: 270px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    height: 50px; /* Fixed height to align with .parent */
+    display: flex;
+    align-items: center; /* Centers the text vertically within the box */
+    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+
+
+
+
+
+
+
+.parent {
+    margin-left: -15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically centers the content */
+    justify-content: flex-start; /* Aligns items horizontally to the left */
+    padding: 7px 8px;
+    gap: 10px; /* Adjust the gap between the number and text box */
+    height: 57px; /* Fixed height for .parent */
+    box-sizing: border-box; /* Ensure padding is included within the height */
+}
+
+.creative-x {
+    margin-left: 10px;
+    width: 270px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center; /* Vertically centers the text within the box */
+    text-overflow: ellipsis;
+    
+    /* Multiline ellipsis */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* Ensure text is vertically centered */
+    justify-content: center; 
+    height: auto; /* Let the height adjust based on content */
+}

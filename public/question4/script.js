@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleDropdown() {
         frameDiv.classList.toggle('hidden');
         arrowIcon.classList.toggle('rotated');
+        hideSkipButton()
         if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
 
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inputField.placeholder = "Select";
             inputField.value = "";
+            showSkipButton()
         }
         updateReadOnlyState();
     }
@@ -109,15 +111,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Save the array to localStorage
         localStorage.setItem('career', JSON.stringify(finalSelection));
-        console.log("Careers:", finalSelection);
+        console.log("Cultures:", finalSelection);
     }
 
     // Event listeners
     selectButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
-        toggleDropdown();
+        
+        // Only toggle the dropdown if it is currently hidden
+        if (frameDiv.classList.contains('hidden')) {
+            toggleDropdown();
+        }
     });
-
+    
     inputField.addEventListener('input', function() {
         filterFunction();
     });
@@ -138,9 +144,27 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSkipButton() {
         skipButton.classList.remove('hidden');
     }
+
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
+    arrowIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleDropdown();
+    });
+
+
+
+
+
 });
 
 function skip() {
-    location.href = "/question6"
-    localStorage.setItem('ethnicity',"none")
+    location.href = "/question5"
+    localStorage.setItem('career',"none")
 }

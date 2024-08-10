@@ -10,6 +10,229 @@ document.addEventListener('DOMContentLoaded', function() {
     const otherWrapper = otherInput.parentElement; // Parent element of "Other" input
     const hiddenInput = document.getElementById('hiddenInput');
 
+    const cultures = [
+        "Aboriginal Australian",
+        "Afghan",
+        "African American",
+        "Albanian",
+        "Algerian",
+        "American",
+        "Amish",
+        "Andorran",
+        "Angolan",
+        "Antiguan",
+        "Argentine",
+        "Armenian",
+        "Aruban",
+        "Assyrian",
+        "Austrian",
+        "Azerbaijani",
+        "Bahamian",
+        "Bahraini",
+        "Bangladeshi",
+        "Barbadian",
+        "Basque",
+        "Belarusian",
+        "Belgian",
+        "Belizean",
+        "Beninese",
+        "Bermudian",
+        "Bhutanese",
+        "Bolivian",
+        "Bosnian",
+        "Botswanan",
+        "Brazilian",
+        "Breton",
+        "British",
+        "British Virgin Islander",
+        "Bruneian",
+        "Bulgarian",
+        "Burkinabé",
+        "Burmese",
+        "Burundian",
+        "Cabo Verdean",
+        "Cambodian",
+        "Cameroonian",
+        "Canadian",
+        "Catalan",
+        "Caymanian",
+        "Central African",
+        "Chadian",
+        "Chilean",
+        "Chinese",
+        "Colombian",
+        "Comorian",
+        "Congolese",
+        "Costa Rican",
+        "Croatian",
+        "Cuban",
+        "Curaçaoan",
+        "Cypriot",
+        "Czech",
+        "Danish",
+        "Djiboutian",
+        "Dominican",
+        "Dutch",
+        "Ecuadorian",
+        "Egyptian",
+        "Emirati",
+        "English",
+        "Equatoguinean",
+        "Eritrean",
+        "Estonian",
+        "Ethiopian",
+        "Faroese",
+        "Fijian",
+        "Filipino",
+        "Finnish",
+        "French",
+        "Gabonese",
+        "Gambian",
+        "Georgian",
+        "German",
+        "Ghanaian",
+        "Gibraltarian",
+        "Greek",
+        "Greenlandic",
+        "Grenadian",
+        "Guadeloupean",
+        "Guatemalan",
+        "Guinean",
+        "Guinea-Bissauan",
+        "Guyanese",
+        "Haitian",
+        "Honduran",
+        "Hong Konger",
+        "Hungarian",
+        "Icelandic",
+        "Indian",
+        "Indonesian",
+        "Iranian",
+        "Iraqi",
+        "Irish",
+        "Israeli",
+        "Italian",
+        "Ivorian",
+        "Jamaican",
+        "Japanese",
+        "Jordanian",
+        "Kazakh",
+        "Kenyan",
+        "Kittitian and Nevisian",
+        "Kuwaiti",
+        "Kyrgyz",
+        "Laotian",
+        "Latvian",
+        "Lebanese",
+        "Liberian",
+        "Libyan",
+        "Liechtenstein",
+        "Lithuanian",
+        "Luxembourgish",
+        "Macanese",
+        "Macedonian",
+        "Malagasy",
+        "Malawian",
+        "Malaysian",
+        "Maldivian",
+        "Malian",
+        "Maltese",
+        "Marshallese",
+        "Martinican",
+        "Mauritanian",
+        "Mauritian",
+        "Mexican",
+        "Micronesian",
+        "Moldovan",
+        "Monacan",
+        "Mongolian",
+        "Montenegrin",
+        "Montserratian",
+        "Moroccan",
+        "Mozambican",
+        "Namibian",
+        "Nauruan",
+        "Nepalese",
+        "New Zealand",
+        "Nicaraguan",
+        "Nigerian",
+        "Nigerien",
+        "Niuean",
+        "North Korean",
+        "Northern Irish",
+        "Norwegian",
+        "Omani",
+        "Pakistani",
+        "Palauan",
+        "Palestinian",
+        "Panamanian",
+        "Papua New Guinean",
+        "Paraguayan",
+        "Peruvian",
+        "Pitcairn Islander",
+        "Polish",
+        "Portuguese",
+        "Puerto Rican",
+        "Qatari",
+        "Réunionese",
+        "Romanian",
+        "Russian",
+        "Rwandan",
+        "Saint Helenian",
+        "Saint Lucian",
+        "Salvadoran",
+        "Sammarinese",
+        "Samoan",
+        "São Toméan",
+        "Saudi Arabian",
+        "Scottish",
+        "Senegalese",
+        "Serbian",
+        "Seychellois",
+        "Sierra Leonean",
+        "Singaporean",
+        "Slovak",
+        "Slovenian",
+        "Solomon Islander",
+        "Somali",
+        "South African",
+        "South Korean",
+        "South Sudanese",
+        "Spanish",
+        "Sri Lankan",
+        "Sudanese",
+        "Surinamese",
+        "Swazi",
+        "Swedish",
+        "Swiss",
+        "Syrian",
+        "Taiwanese",
+        "Tajik",
+        "Tanzanian",
+        "Thai",
+        "Timorese",
+        "Togolese",
+        "Tongan",
+        "Trinidadian and Tobagonian",
+        "Tunisian",
+        "Turkish",
+        "Turkmen",
+        "Tuvaluan",
+        "Ugandan",
+        "Ukrainian",
+        "Uruguayan",
+        "Uzbek",
+        "Vatican",
+        "Venezuelan",
+        "Vietnamese",
+        "Vincentian",
+        "Wallisian",
+        "Welsh",
+        "Yemeni",
+        "Zambian",
+        "Zimbabwean"
+    ];
+    
 
     // Array to store selected minors
     let selectedMinors = [];
@@ -56,6 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
         arrowIcon.classList.toggle('rotated');
         if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
+            hideSkipButton()
 
             // Show hidden input, focus it, and then hide it again
             hiddenInput.style.visibility = 'visible';
@@ -67,6 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inputField.placeholder = "Select";
             inputField.value = "";
+            showSkipButton()
         }
         updateReadOnlyState();
     }
@@ -115,13 +340,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     selectButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
-        toggleDropdown();
+        
+        // Only toggle the dropdown if it is currently hidden
+        if (frameDiv.classList.contains('hidden')) {
+            toggleDropdown();
+        }
     });
-
     inputField.addEventListener('input', function() {
         filterFunction();
     });
 
+    arrowIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleDropdown();
+    });
+    
     forwardArrow.addEventListener('click', function() {
         saveSelectedMinors();
         // You can also redirect to the next page here if needed
@@ -138,6 +371,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSkipButton() {
         skipButton.classList.remove('hidden');
     }
+
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
+
 });
 
 function skip() {

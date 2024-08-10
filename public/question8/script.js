@@ -14,15 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Array to store selected minors
     let selectedMinors = [];
 
-    // Function to toggle readonly state based on placeholder
-    function updateReadOnlyState() {
-        if (inputField.placeholder === 'Select') {
-            inputField.setAttribute('readonly', true);
-        } else {
-            inputField.removeAttribute('readonly');
-        }
-    }
-
     dropdowns.forEach(wrapper => {
         wrapper.addEventListener('click', (event) => {
             // Prevent the click from toggling the checkbox multiple times
@@ -45,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Add major to the array
                     selectedMinors.push(major);
                 }
+                console.log("Selected Genders:", selectedMinors);
             }
         });
     });
@@ -54,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         frameDiv.classList.toggle('hidden');
         arrowIcon.classList.toggle('rotated');
         if (!frameDiv.classList.contains('hidden')) {
+            hideSkipButton()
             inputField.placeholder = "Search";
 
             // Show hidden input, focus it, and then hide it again
@@ -66,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inputField.placeholder = "Select";
             inputField.value = "";
+            showSkipButton()
         }
         updateReadOnlyState();
     }
@@ -110,17 +104,25 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Save the array to localStorage
         localStorage.setItem('hobbies', JSON.stringify(finalSelection));
-        console.log("Hobbies:", finalSelection);
+        console.log("Gender Identities:", finalSelection);
     }
 
     // Event listeners
     selectButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
-        toggleDropdown();
+        
+        // Only toggle the dropdown if it is currently hidden
+        if (frameDiv.classList.contains('hidden')) {
+            toggleDropdown();
+        }
     });
-
     inputField.addEventListener('input', function() {
         filterFunction();
+    });
+
+    arrowIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleDropdown();
     });
 
     forwardArrow.addEventListener('click', function() {
@@ -129,9 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // location.href = '/question1';
     });
 
-    // Initial check to ensure read-only state is set correctly
-    updateReadOnlyState();
-
     function hideSkipButton() {
         skipButton.classList.add('hidden');
     }
@@ -139,6 +138,24 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSkipButton() {
         skipButton.classList.remove('hidden');
     }
+
+    function updateReadOnlyState() {
+        if (inputField.placeholder === 'Select') {
+            inputField.setAttribute('readonly', true);
+        } else {
+            inputField.removeAttribute('readonly');
+        }
+    }
+
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
+
 });
 
 function skip() {

@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../globals.css" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="INTRO">
-            <div class="frame">
-                <div class="overlap">
-                    <div class="overlap-group-wrapper">
-                        <div class="overlap-group">
-                            <img class="UR-club-instagram" src="../assets/img/UR club Instagram Post (4) 1.png" />
-                            <div class="text-wrapper">hello</div>
-                        </div>
-                    </div>
-                    <img class="UR-club-at-instagram" src="../assets/img/UR club at Instagram 1.png" />
-                    <img class="lucide-sparkle" src="../assets/img/lucide_sparkle.svg" />
-                </div>
-            </div>
-            <div class="ur-club-at-ru-wrapper">
-                <p class="ur-club-at-ru">
-                    <span class="span">ur </span>
-                    <span class="text-wrapper-2">club at </span>
-                    <span class="span">ru</span>
-                </p>
-            </div>
-            <p class="div">Find a Rutgers club based on your personality</p>
-            <div class="frame-2" onclick="location.href='/intro2'">
-                <div class="text-wrapper-3">Take the quiz</div>
-                <img class="rivet-icons-arrow-up" src="../assets/img/rivet-icons_arrow-up.svg" />
-            </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../assets/img/UR club Instagram Post (4) 1.png" type="image/png">
+    <title>UrClubAtRU</title>
+
+
+    <style>
+        body {
+            opacity: 1;
+            animation: none;
+        }
+        .fade-out {
+            animation: fadeOut 0.25s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="INTRO">
+        <div class="ur-club-at-container">
+            <span class="ur">ur </span>
+            <span class="club-at">
+                <span class="club">club</span>
+                <span class="ur"> at </span>
+            </span>
+            <span class="ur">
+                <span>ru</span>
+            </span>
         </div>
-    </body>
+        <div class="find-a-rutgers">Find a Rutgers club based on your personality</div>
+        <div class="take-the-quiz-parent" id="frameContainer">
+            <div class="take-the-quiz" onclick="location.href='/intro2'">Take the quiz</div>
+            <img class="rivet-iconsarrow-up" alt="" src="../assets/img/rivet-icons_arrow-up.svg">
+        </div>
+        <img class="intro-1-child" alt="" src="../assets/img/Frame 88.svg">
+        <div class="intro-1-item"></div>
+        <img class="intro-1-inner" alt="" src="../assets/img/Bruh.png">
+        <img class="lucidesparkle-icon" alt="" src="../assets/img/lucide_sparkle.svg">
+        <div class="frame-parent">
+            <img class="frame-child" alt="" src="../assets/img/Frame 37.svg">
+            <div class="dd">D+D</div>
+        </div>
+        <img class="summertime-sadness-icon" alt="" src="../assets/img/clover.svg">
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function navigateTo(url) {
+                document.body.classList.add('fade-out');
+                setTimeout(function() {
+                    window.location.href = url;
+                }, 250);
+            }
+
+            var frameContainer = document.getElementById("frameContainer");
+            if(frameContainer) {
+                frameContainer.addEventListener("click", function (e) {
+                    navigateTo('/intro2');
+                });
+            }
+        });
+    </script>
+</body>
 </html>

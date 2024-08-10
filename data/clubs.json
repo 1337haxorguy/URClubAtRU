@@ -322,7 +322,7 @@
         },
         {
             "name": "Ballroom Dance Sport Club (Rutgers Recreation)",
-            "description": "We are Rutgers Ballroom! Throughout the week, we offer professional instruction for Standard and Latin styles of dances for all levels. No experience necessary! We also compete at regional collegiate ballroom competitions as well as host our very own!"
+            "description": "We are Rutgers Ballroom! Throughout the week, we offer professional instruction for Standard and Latin styles of dances for all levels. We also compete at regional collegiate ballroom competitions as well as host our very own!"
         },
         {
             "name": "BAPS Campus Fellowship of Rutgers",
@@ -407,10 +407,6 @@
         {
             "name": "Blood Initiative (Rutgers University)",
             "description": "We are a community of dynamic and passionate young leaders dedicated to combating local blood shortages. Our mission is to support local blood centers by empowering, educating, and mobilizing the next generation of blood donors."
-        },
-        {
-            "name": "Bloustein Graduate Student Association (Graduate Organization)",
-            "description": "Advocacy group for students of the Urban Planning & Policy Development, Public Policy, Public Informatics, and Health Administration graduate program at Edward J. Bloustein School of Planning and Public Policy, Rutgers University in New Brunswick."
         },
         {
             "name": "Bloustein Public Service Association",
@@ -1089,16 +1085,8 @@
             "description": "Welcome to RUFSC! If you are looking to continue your figure skating career in college, you've come to the right place! RUFSC promotes the sport of figure skating in a recreational and competitive way that is affordable for all students. ⛸️"
         },
         {
-            "name": "Filipino Martial Arts Sport Club (Rutgers Recreation)",
-            "description": "Welcome to the Eskrima Sports Club formerly The Rutgers University Filipino Martial Arts Club homepage! The primary mission of our club is to learn and practice the traditional martial art from the Philippines known as Eskrima (also known as Kali)"
-        },
-        {
             "name": "Film Productions (Rutgers University)",
             "description": "Rutgers University Film Productions (RUFP) is a student-run organization that gives students of Rutgers University the opportunity to utilize and enhance their creative talents through the multi-faceted and exciting world of film production!"
-        },
-        {
-            "name": "First Generation Student Union",
-            "description": "FGSU provides a community of support and resources for academic and professional success. Students will discuss key issues affecting first generation students, attend workshops, meet speakers and scholars, and volunteer for community service trips."
         },
         {
             "name": "First Light",
@@ -1330,7 +1318,7 @@
         },
         {
             "name": "Hearthstone",
-            "description": "Looking for fellow Hearthstone players? Look no more! We discuss strategies, share highlights, and compete in regular tournaments! Join us by the hearth for fun games with good company."
+            "description": "Looking for fellow Hearthstone players? We discuss strategies, share highlights, and compete in regular tournaments! Join us by the hearth for fun games with good company."
         },
         {
             "name": "Heath Outreach, Promotion & Education (HOPE)",
@@ -1386,7 +1374,7 @@
         },
         {
             "name": "Horror Society (Rutgers)",
-            "description": "Rutgers’ sole club dedicated to year-round discussion and analysis of all things horror, including movies, games, literature, and more."
+            "description": "Rutgers’ sole club dedicated to year-round discussion and analysis of all things horror."
         },
         {
             "name": "House the Hub",
@@ -2783,10 +2771,6 @@
         {
             "name": "Rutgers Business School-NB Undergraduate Programs (Advising Office)",
             "description": "Provides academic advising and support for undergraduate students at Rutgers Business School."
-        },
-        {
-            "name": "Rutgers Cinema",
-            "description": "Three-screen first-run movie theater located at the Plaza on Livingston Campus."
         },
         {
             "name": "Rutgers College Support Program/Rutgers Center for Adult Autism Services (University Department)",

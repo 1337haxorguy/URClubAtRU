@@ -1,148 +1,136 @@
+.ur {
+    font-weight: 600;
+}
+.club {
+    font-weight: 600;
+    font-family: Neulis;
+}
+.club-at {
+    color: #000;
+}
+.ur-club-at-container {
+    position: absolute;
+    top: calc(50% - 29px);
+    left: calc(50% - 153px);
+    font-size: 80px;
+    line-height: 70px;
+    display: inline-block;
+    width: 311px;
+    color: #e63a26;
+}
+.find-a-rutgers {
+    position: absolute;
+    top: 614px;
+    left: calc(50% - 134px);
+    display: inline-block;
+    width: 273px;
+    height: 51px;
+}
+.take-the-quiz {
+    position: relative;
+}
+.rivet-iconsarrow-up {
+    width: 18px;
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.take-the-quiz-parent {
+    position: absolute;
+    top: 716px;
+    left: calc(50% - 111px);
+    border-radius: 100px;
+    background-color: #000;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    gap: 9px;
+    cursor: pointer;
+    color: #fff;
+}
+.intro-1-child {
+    position: absolute;
+    top: 175px;
+    left: -24px;
+    width: 191px;
+    height: 210.7px;
+}
+.intro-1-item {
+    position: absolute;
+    top: 87px;
+    left: 153px;
+    width: 328.5px;
+    height: 328.5px;
+}
+.intro-1-inner {
+    position: absolute;
+    top: 15.3px;
+    left: 128.71px;
+    width: 341.6325px;
+    height: 357.225px;
+        object-fit: contain;
+    }
+.lucidesparkle-icon {
+    position: absolute;
+    top: 8px;
+    left: 193.27px;
+    width: 129px;
+    height: 129px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.frame-child {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 23.9px;
+    flex-shrink: 0;
+}
+.dd {
+    align-self: stretch;
+    position: relative;
+    line-height: 14.96px;
+}
+.frame-parent {
+    position: absolute;
+    top: 859px;
+    left: calc(50% - 38px);
+    width: 76.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px 22.3px;
+    box-sizing: border-box;
+    gap: 3.2px;
+    text-align: left;
+    font-size: 14.72px;
+}
+.summertime-sadness-icon {
+    position: absolute;
+    top: -65.46px;
+    left: -58.46px;
+    width: 233.7px;
+    height: 233.7px;
+    object-fit: contain;
+}
 .INTRO {
     position: relative;
     width: 430px;
     height: 932px;
     background-color: #fcf8f6;
-}
-
-.INTRO .frame {
-    position: relative;
-    width: 313.72px;
-    height: 335.62px;
-}
-
-.INTRO .overlap {
-    position: relative;
-    width: 314px;
-    height: 336px;
-}
-
-.INTRO .overlap-group-wrapper {
-    position: absolute;
-    width: 193px;
-    height: 138px;
-    top: 191px;
-    left: 5px;
-    transform: rotate(-4.31deg);
-}
-
-.INTRO .overlap-group {
-    position: relative;
-    width: 217px;
-    height: 217px;
-    top: -40px;
-    left: -12px;
-}
-
-.UR-club-instagram {
-    position: absolute;
-    width: 202px;
-    height: 202px;
-    top: 7px;
-    left: 7px;
-    transform: rotate(4.31deg);
-    object-fit: cover;
-}
-
-.INTRO .text-wrapper {
-    position: absolute;
-    width: 66px;
-    top: 64px;
-    left: 69px;
-    transform: rotate(-9.36deg);
-    font-family: "Neulis-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 20.3px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.UR-club-at-instagram {
-    position: absolute;
-    width: 202px;
-    height: 194px;
-    top: 37px;
-    left: 112px;
-    object-fit: cover;
-}
-
-.INTRO .lucide-sparkle {
-    position: absolute;
-    width: 108px;
-    height: 108px;
-    top: 0;
-    left: 10px;
-}
-
-.INTRO .ur-club-at-ru-wrapper {
-    position: relative;
-    width: 303px;
-    height: 140px;
-}
-
-.INTRO .ur-club-at-ru {
-    position: absolute;
-    width: 303px;
-    top: -1px;
-    left: 0;
-    font-family: "Neulis Alt-SemiBold", Helvetica;
-    font-weight: 400;
-    color: transparent;
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 70px;
-}
-
-.INTRO .span {
-    font-weight: 600;
-    color: #e63a26;
-}
-
-.INTRO .text-wrapper-2 {
-    font-family: "Neulis-SemiBold", Helvetica;
-    font-weight: 600;
-    color: #000000;
-}
-
-.INTRO .div {
-    position: relative;
-    width: 273px;
-    font-family: "Neulis Alt-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20.3px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.INTRO .frame-2 {
-    display: inline-flex;
-    height: 55px;
-    align-items: center;
-    gap: 9px;
-    padding: 15px 35px;
-    position: relative;
-    background-color: #000000;
-    border-radius: 10px;
     overflow: hidden;
-}
-
-.INTRO .text-wrapper-3 {
-    position: relative;
-    width: fit-content;
-    margin-top: -2px;
-    font-family: "Neulis Alt-Regular", Helvetica;
-    font-weight: 400;
-    font-size: 20.3px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Neulis Alt-Regular';
 }
 
-.INTRO .rivet-icons-arrow-up {
-    position: relative;
-    width: 18.04px;
-    height: 18.04px;
-}

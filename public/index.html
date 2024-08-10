@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="./globals.css" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="description" content="Discover clubs at Rutgers University that match your personality and interests with our AI-powered quiz. Find your perfect fit based on your unique traits and preferences.">
+
+    <link rel="stylesheet" href="../globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="/intro2" as="document">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="icon" href="./assets/img/UR club Instagram Post (4) 1.png" type="image/png">
+    <title>UrClubAtRU</title>
+
+    <style>
+        .loading-screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999; /* Ensure the loading screen is above other content */
+        }
+        .main-content {
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+        .fade-in {
+            opacity: 1;
+        }
+        body.loading .main-content {
+            opacity: 0;
+        }
+        body.loaded .loading-screen {
+            display: none;
+        }
+    </style>
+</head>
+<body class="loading">
+    <div class="loading-screen">
+        <dotlottie-player class="httpslottiefilescomanimat-icon" src="https://lottie.host/ecd84637-3233-4b0f-8e83-1d757b54c0a7/DHh9Szaszb.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+
+    <div class="main-content">
         <div class="INTRO">
-        <div class="ur-club-at-container">
-        <span class="ur">ur </span>
-        <span class="club-at">
-        <span class="club">club</span>
-        <span class="ur"> at </span>
-        </span>
-        <span class="ur">
-        <span>ru</span>
-        </span>
+            <div class="ur-club-at-container">
+                <span class="ur">ur </span>
+                <span class="club-at">
+                    <span class="club">club</span>
+                    <span class="ur"> at </span>
+                </span>
+                <span class="ur">
+                    <span>ru</span>
+                </span>
+            </div>
+            <div class="find-a-rutgers">Find a Rutgers club based on your personality</div>
+            <div class="take-the-quiz-parent" id="frameContainer">
+                <div class="take-the-quiz" onclick="navigateTo('/intro2')">Take the quiz</div>
+                <img class="rivet-iconsarrow-up" alt="" src="../assets/img/rivet-icons_arrow-up.svg">
+            </div>
+            <img class="intro-1-child" alt="" src="../assets/img/Frame 88.svg">
+            <div class="intro-1-item"></div>
+            <img class="intro-1-inner" alt="" src="../assets/img/Bruh.png">
+            <img class="lucidesparkle-icon" alt="" src="../assets/img/lucide_sparkle.svg">
+            <div class="frame-parent">
+                <img class="frame-child" alt="" src="../assets/img/Frame 37.svg">
+                <div class="dd">D+D</div>
+            </div>
+            <img class="summertime-sadness-icon" alt="" src="../assets/img/clover.svg">
         </div>
-        <div class="find-a-rutgers">Find a Rutgers club based on your personality</div>
-        <div class="take-the-quiz-parent" id="frameContainer">
-        <div class="take-the-quiz" onclick="location.href='/intro2'">Take the quiz</div>
-        <img class="rivet-iconsarrow-up" alt="" src="./assets/img/rivet-icons_arrow-up.svg">
-        </div>
-        <img class="intro-1-child" alt="" src="./assets/img/Frame 88.svg">
-        <div class="intro-1-item">
-        </div>
-        <img class="intro-1-inner" alt="" src="./assets/img/UR club Instagram Post (4) 1 (1).png">
-        <img class="lucidesparkle-icon" alt="" src="./assets/img/lucide_sparkle.svg">
-        <div class="frame-parent">
-        <img class="frame-child" alt="" src="./assets/img/Frame 37.svg">
-        <div class="dd">D+D</div>
-        </div>
-        <img class="summertime-sadness-icon" alt="" src="./assets/img/Summertime Sadness.svg">
-        </div>
-                  
-          
-          
-          
-          <script>
-                var frameContainer = document.getElementById("frameContainer");
-                if(frameContainer) {
-                      frameContainer.addEventListener("click", function (e) {
-                            // Add your code here
-                      });
-                }</script></body>
-    </html>
+    </div>
+
+    <script>
+        function navigateTo(url) {
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                window.location.href = url;
+            }, 250); // Delay matches the fade-out duration
+        }
+
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.body.classList.remove('loading');
+                document.body.classList.add('loaded');
+                document.querySelector('.main-content').classList.add('fade-in');
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+    </script>
+</body>
+</html>

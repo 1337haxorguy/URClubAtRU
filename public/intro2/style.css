@@ -7,7 +7,7 @@
 
 .INTRO .frame {
     display: flex;
-    width: 211px;
+    width: 147px;
     height: 55px;
     align-items: center;
     justify-content: center;
@@ -17,8 +17,9 @@
     top: 374px;
     left: 44px;
     background-color: #000000;
-    border-radius: 10px;
+    border-radius: 100px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .INTRO .text-wrapper {

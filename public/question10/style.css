@@ -21,7 +21,7 @@
     width: 320px;
     height: 31px;
 }
-.frame-child {
+.instance-child {
     position: absolute;
     top: 0px;
     left: calc(50% - 160px);
@@ -31,37 +31,38 @@
     height: 8px;
     overflow: hidden;
 }
-.frame-item {
+.instance-item {
     position: absolute;
     top: 0px;
     left: calc(50% - 160px);
     border-radius: 100px;
     background-color: #e63a26;
-    width: 47px;
+    width: 159.6px;
     height: 8px;
     overflow: hidden;
 }
 .frame-parent {
     position: absolute;
     top: 143px;
-    left: 55px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 320px;
     height: 8px;
 }
-.div {
+
+.div1 {
     position: absolute;
     top: 0px;
     left: 0px;
     line-height: 78.54px;
     font-weight: 300;
     font-family: "Neulis Alt";
-
 }
+
 .number {
     width: 26.1px;
     position: relative;
     height: 79.3px;
-    font-size: 70px;
 }
 .hey-there-scarlet {
     position: absolute;
@@ -71,114 +72,56 @@
     line-height: 40.54px;
     display: inline-block;
 }
-
 .title {
     width: 288.5px;
     position: relative;
-    margin-top: -20px;
     height: 89.2px;
-    font-size: 36px;
+    font-size: 36.06px;
     color: #fff;
-    font-family: 'Neulis Alt';
-
+    font-family: "Neulis Alt-Regular", Helvetica;
+    
 }
-.span {
-    font-size: 20px;
-}
-.select {
+.text {
     position: relative;
-    line-height: 40.63px;
-    font-size: 20px;
-
+    line-height: 36.63px;
+    font-weight: 600;
 }
-.uiwdown-icon {
-    width: 20px;
-    position: relative;
-    height: 20px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-.dropdown {
-    align-self: stretch;
-    border-radius: 10px;
+.button {
+    width: 288.5px;
+    border-radius: 9.01px;
     background-color: #fcf8f6;
-    border: 1px solid #e1dcd8;
-    box-sizing: border-box;
-    height: 51.8px;
+    height: 45.1px;
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 5.4px 36px;
-    gap: 147px;
-    color: #cdcbc8;
-    cursor: pointer;
-    margin-top: 60px;
+    padding: 4.9px 32.6px;
+    box-sizing: border-box;
+}
 
+.button:hover {
+    background-color: #000; /* Change background color on hover */
+    color: #fcf8f6; /* Change text color on hover */
 }
-.accounting {
-    position: relative;
-    line-height: 30px;
-}
-.accounting-wrapper {
-    width: 218px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-.frame-wrapper1:hover {
-    width: 260px;
-    border-radius: 8px;
-    background-color: #efe8e3;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0px 19px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    box-sizing: border-box;
-}
-.frame-wrapper1 {
-    width: 260px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0px 19px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    box-sizing: border-box;
-}
-.frame-div {
-    width: 288px;
-    border-radius: 10px;
-    background-color: #fcf8f6;
-    border: 1px solid #e1dcd8;
-    box-sizing: border-box;
-    overflow-x: hidden;
+
+.button-parent {
+    margin-top: 30px;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    padding: 14px 0px;
-    gap: 10px;
+    gap: 14.4px;
+    font-size: 14.42px;
     color: #000;
-    font-size: 18px;
-    max-height: 200px; /* Limit height */
-    overflow-y: scroll; /* Enable vertical scrolling */
-    cursor: pointer;
-    width: 100%;
-    
+    font-family: 'Neulis Bold';
 }
 .number-parent {
     position: absolute;
     top: 68px;
-    left: 31px;
+    left: 30px;
     width: 288.5px;
     display: flex;
     flex-direction: column;
@@ -186,40 +129,37 @@
     justify-content: flex-start;
     gap: 23.4px;
 }
-.frame-container {
+.stairs-1-icon {
     position: absolute;
-    top: 0px;
-    left: calc(50% - 175px);
-    border-radius: 20px;
-    background-color: #e63a26;
-    border: 1px solid #ebe5df;
-    box-sizing: border-box;
-    width: 350px;
-    height: 575px;
-    overflow: hidden;
+    top: 40.36px;
+    left: 230.63px;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+.arc-icon {
+    position: absolute;
+    top: 101px;
+    left: 243px;
+    width: 64.2px;
+    height: 43.1px;
+    object-fit: contain;
 }
 .frame-group {
     position: absolute;
     top: 208px;
     left: calc(50% - 175px);
     border-radius: 20px;
-    background-color: #e63a26;
+    /* background-color: #e63a26; */
+    background-color: #6db8be;
+
     border: 1px solid #ebe5df;
     box-sizing: border-box;
     width: 350px;
     height: 575px;
     overflow: hidden;
-    /* font-size: 70px; */
+    font-size: 70px;
     color: #fcf8f6;
-}
-.rivet-iconsarrow-up {
-    position: absolute;
-    top: 855px;
-    left: 47px;
-    width: 33px;
-    height: 33px;
-    overflow: hidden;
-    object-fit: contain;
 }
 .INTRO {
     width: 100%;
@@ -232,114 +172,19 @@
     font-size: 30px;
     color: #e63a26;
     font-family: 'Neulis Alt-Regular';
+    
 }
 
-.hidden {
-    display: none;
-}
-
-.uiwdown-icon {
-    transition: transform 0.3s ease;
-}
-
-.uiwdown-icon.rotated {
-    transform: rotate(180deg);
-}
-
-.dropdown {
-    align-self: stretch;
-    border-radius: 10px;
-    background-color: #fcf8f6;
-    border: 1px solid #e1dcd8;
-    box-sizing: border-box;
-    height: 51.8px;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5.4px 10px; /* Adjust padding */
-    color: #cdcbc8;
-    cursor: pointer;
-    position: relative;
-
-}
-
-
-.dropdown .select {
-    flex: 1; /* Makes sure input takes up available space */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-}
-
-.dropdown .select input {
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px; /* Adjust padding to ensure proper spacing */
-    margin-right: 30px; /* Add space for the arrow icon */
-    overflow: hidden; /* Ensures text is cut off before the icon */
-    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
-    white-space: nowrap; /* Prevents text from wrapping */
-    margin-left: 20px;
-}
-
-.dropdown .select input::placeholder {
-    color: #cdcbc8;
-}
-
-.uiwdown-icon {
+.rivet-iconsarrow-up {
     position: absolute;
-    right: 30px;
-    width: 20px;
-    height: 20px;
+    top: 855px;
+    left: 47px;
+    width: 33px;
+    height: 33px;
     overflow: hidden;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
+    object-fit: contain;
 }
-
-.uiwdown-icon.rotated {
-    transform: rotate(180deg);
-}
-
-.dropdown .select input:focus {
-    outline: none;
-}
-
-.dropdown .select input[readonly] {
-    background-color: #fcf8f6; /* Matches the background color of your dropdown */
-    cursor: default; /* Show a default cursor to indicate it's not editable */
-    color: #cdcbc8; /* Style the text color as desired */
-}
-
-.checkbox {
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-    border: 1.5px solid #000;
-    box-sizing: border-box;
-    position: relative; /* Added for positioning the checkmark inside */
-    margin-left: auto; /* Align to the right of the frame-wrapper1 */
-}
-
-.checkmark {
-    width: 100%;
-    height: 100%;
-    border-radius: 2px;
-    background-color: transparent;
-    position: absolute; /* Position the checkmark inside the checkbox */
-    top: 0;
-    left: 0;
-    display: none; /* Hide by default */
-}
-
-.checkmark.selected {
-    display: block; /* Show when selected */
-}
+    
 
 .arrow-icon {
     width: 33px;
@@ -348,7 +193,7 @@
     overflow: hidden;
     flex-shrink: 0;
     object-fit: contain;
-}
+    }
     .arrow-parent {
     position: absolute;
     top: 820px;
@@ -365,25 +210,6 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);  
 }
-
-.lightning-2-icon {
-    position: absolute;
-    top: 40px;
-    left: 169px;
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.leaf-icon {
-    position: absolute;
-    top: 20px;
-    left: 190px;
-    width: 72.5px;
-    height: 72.5px;
-    object-fit: contain;
-}
-
 .skip {
     position: absolute;
     top: 513px;
@@ -393,37 +219,27 @@
     line-height: 40.54px;
     color: #fff;
 }
-.stairs-2 {
-    position: absolute;
-    top: 50px;
-    left: 225px;
-    width: 86.6px;
-    height: 86.6px;
+.selected {
+    background-color: #000; /* Change background color on hover */
+    color: #fcf8f6; /* Change text color on hover */
+
+}
+.arrow-icon {
+    width: auto;
+    position: relative;
+    height: 52.6px;
+    overflow: hidden;
+    flex-shrink: 0;
     object-fit: contain;
     }
-
-.rhode-island {
+    .arrow-parent {
     position: absolute;
-    top: 0px;
-    left: 240px;
-    width: 62.9px;
-    height: 79.2px;
-    object-fit: contain;
-}
-
-#Other {
-    border: none;
-    background: transparent;
-    font-size: 17px;
-    font-weight: 300;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px; /* Adjust padding to ensure proper spacing */
-    overflow: hidden; /* Ensures text is cut off before the icon */
-    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
-    white-space: nowrap; /* Prevents text from wrapping */
-    outline: none;
-    margin-left: -4px;
-    font-family: 'Neulis Alt-Regular';
-    margin-right: 10px;
+    top: 820px;
+    left: calc(50% - 171.79px);
+    width: 341.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 242px;
 }

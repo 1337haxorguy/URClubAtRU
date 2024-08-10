@@ -5,9 +5,13 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="../globals.css" />
     <link rel="stylesheet" href="./style.css" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neulis+Alt:wght@400;600&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neulis:wght@600&display=swap" />
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="icon" href="../assets/img/UR club Instagram Post (4) 1.png" type="image/png">
+    <title>UrClubAtRU</title>
+
 </head>
 <body>
     <div class="loading-screen">
@@ -40,21 +44,24 @@
                 const localStorageData = {
                     major: parseJSONSafely(localStorage.getItem('major')),
                     userYear: localStorage.getItem('userYear') || "", 
-                    verted: localStorage.getItem('verted') || "",
-                    gender: parseJSONSafely(localStorage.getItem('gender')),
+                    genderIdentity: parseJSONSafely(localStorage.getItem('genderIdentity')) || "",
+                    gender: localStorage.getItem('gender'),
                     minor: parseJSONSafely(localStorage.getItem('minor')),
                     hobbies: parseJSONSafely(localStorage.getItem('hobbies')),
                     career: parseJSONSafely(localStorage.getItem('career')),
                     WantsGreekLife: localStorage.getItem('WantsGreekLife') || "",
                     sports: parseJSONSafely(localStorage.getItem('sports')),
                     causesPassionateAbout: parseJSONSafely(localStorage.getItem('causesPassionateAbout')),
-                    arts: parseJSONSafely(localStorage.getItem('arts')),
                     religion: parseJSONSafely(localStorage.getItem('religion')),
                     personality: parseJSONSafely(localStorage.getItem('personality')),
-                    ethnicity: parseJSONSafely(localStorage.getItem('ethnicity'))
+                    ethnicity: parseJSONSafely(localStorage.getItem('ethnicity')),
+                    personality: parseJSONSafely(localStorage.getItem('verted'))
                 };
 
                 const jsonString = JSON.stringify(localStorageData);
+                localStorage.setItem('tags', jsonString );
+
+
 
                 try {
                     const response = await fetch('/filter-clubs', {
@@ -79,7 +86,7 @@
                     const recommendations = data.recommendations.split('\n').filter(item => item.trim() !== '');
                     localStorage.setItem('recommendations', JSON.stringify(recommendations));
 
-                    window.location.href = '/answer1';
+                    window.location.href = '/answer';
                 } catch (error) {
                     console.error('Error fetching filtered clubs and recommendations:', error);
                 }

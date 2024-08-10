@@ -8,7 +8,81 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.frame-wrapper1');
     const hiddenInput = document.getElementById('hiddenInput');
 
+    const minors = [
+        'African Area Studies',
+        'Africana Studies',
+        'Aging',
+        'American Studies',
+        'Anthropology',
+        'Art History',
+        'Asian Studies',
+        'Astronomy',
+        'Biological Sciences',
+        'Chemistry',
+        'Chinese',
+        'Cinema Studies',
+        'Classical Humanities',
+        'Cognitive Science',
+        'Comparative Literature',
+        'Computer Science',
+        'Economics',
+        'English',
+        'European Studies',
+        'French',
+        'Geography',
+        'Geological Sciences',
+        'German',
+        'Greek (Ancient)',
+        'Greek (Modern)',
+        'History',
+        'Hungarian',
+        'Italian',
+        'Japanese',
+        'Jewish Studies',
+        'Korean',
+        'Labor Studies',
 
+        'Latin',
+        'Latin American Studies',
+        'Linguistics',
+        'Marine Sciences',
+        'Mathematics',
+        'Medieval Studies',
+        'Middle Eastern Studies',
+        'Music',
+        'Operations Research',
+        'Philosophy',
+        'Physics',
+        'Planning and Public Policy',
+        'Political Science',
+        'Portuguese',
+        'Psychology',
+        'Puerto Rican and Hispanic Caribbean Studies',
+        'Religion',
+        'Russian',
+        'Science, Technology, and Society',
+        'Sociology',
+        'South Asian Studies',
+        'Spanish',
+        'Statistics',
+        'Theater Arts',
+        'Women\'s and Gender Studies',
+    ];
+
+
+    minors.forEach(minor => {
+        const div = document.createElement('div');
+        div.className = 'frame-wrapper1';
+        
+        div.innerHTML = `
+            <div class="accounting">${minor}</div>
+            <div class="checkbox">
+                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+            </div>
+        `;
+        
+        frameDiv.appendChild(div);
+    });
 
 
     // Array to store selected majors
@@ -58,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         arrowIcon.classList.toggle('rotated');
         if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
+            hideSkipButton()
 
             // Show hidden input, focus it, and then hide it again
             hiddenInput.style.visibility = 'visible';
@@ -69,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inputField.placeholder = "Select";
             inputField.value = "";
+            showSkipButton()
         }
         updateReadOnlyState();
     }
@@ -109,11 +185,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     selectButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
-        toggleDropdown();
+        
+        // Only toggle the dropdown if it is currently hidden
+        if (frameDiv.classList.contains('hidden')) {
+            toggleDropdown();
+        }
     });
-
     inputField.addEventListener('input', function() {
         filterFunction();
+    });
+
+    arrowIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleDropdown();
     });
 
     forwardArrow.addEventListener('click', function() {
@@ -142,9 +226,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
+
+
 });
 
 function skip() {
     location.href = "/question4"
     localStorage.setItem('minor',"none")
 }
+

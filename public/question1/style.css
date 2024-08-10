@@ -1,5 +1,6 @@
 .ur {
     font-weight: 600;
+    font-family: 'Neulis Alt-Regular';
 }
 .club-at {
     font-weight: 600;
@@ -37,7 +38,7 @@
     left: calc(50% - 160px);
     border-radius: 100px;
     background-color: #e63a26;
-    width: 23px;
+    width: 22.8px;
     height: 8px;
     overflow: hidden;
 }
@@ -78,7 +79,7 @@
     height: 89.2px;
     font-size: 36.06px;
     color: #fff;
-    font-family: 'Neulis Alt';
+    font-family: "Neulis Alt-Regular", Helvetica;
     
 }
 .text {
@@ -92,7 +93,7 @@
     background-color: #fcf8f6;
     height: 45.1px;
     overflow: hidden;
-    flex-shrink: 0;
+    flex-shrink: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,7 +115,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 14.4px;
-    font-size: 14.42px;
+    font-size: 16px;
+    font-family: 'Neulis Bold';
+
     color: #000;
 }
 .number-parent {
@@ -135,14 +138,16 @@
     width: 75px;
     height: 75px;
     object-fit: contain;
+    color: white;
 }
 .arc-icon {
     position: absolute;
-    top: 101px;
+    top: 125px;
     left: 243px;
     width: 64.2px;
     height: 43.1px;
     object-fit: contain;
+    color: white;
 }
 .frame-group {
     position: absolute;
@@ -184,9 +189,9 @@
     
 
 .arrow-icon {
-    width: 33px;
+    width: auto;
     position: relative;
-    height: 33px;
+    height: 52.6px;
     overflow: hidden;
     flex-shrink: 0;
     object-fit: contain;
@@ -200,7 +205,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 284px;
+    gap: 242px;
 }
 
 #forwardArrow {

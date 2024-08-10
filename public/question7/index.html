@@ -1,65 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  	<meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../globals.css" />
-      <link rel="stylesheet" href="style.css" />  	
-  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="preload" href="/question8" as="document"> -->
+
+    <link rel="icon" href="../assets/img/UR club Instagram Post (4) 1.png" type="image/png">
+    <title>UrClubAtRU</title>
+  <style>
+        /* Hide the hidden input field initially */
+        #hiddenInput {
+            position: absolute;
+            top: 50%; /* Position off-screen */
+            left: 50%;
+            opacity: 0;
+            pointer-events: none; /* Prevent interaction */
+        }
+    </style>
+
 </head>
 <body>
-  	
-  	<div class="INTRO">
-    		<div class="logo-top">
-      			<div class="ur-club-at-container">
-        				<span class="ur">ur </span>
-        				<span class="club-at">club at </span>
-        				<span class="ur">ru</span>
-      			</div>
-    		</div>
-    		<div class="frame-parent">
-      			<div class="instance-child">
-      			</div>
-      			<div class="instance-item">
-      			</div>
-    		</div>
-    		<div class="frame-group">
-      			<div class="number-parent">
-        				<div class="number">
-          					<div class="div1">7</div>
-        				</div>
-        				<div class="title">
-          					<div class="hey-there-scarlet">Are you introverted or extroverted?</div>
-        				</div>
-        				<div class="button-parent">
-          					<div class="button" vert="Introverted">
-            						<div class="text" data-year="Freshman">Introverted</div>
-          					</div>
-          					<div class="button" vert="Extroverted" >
-            						<div class="text" >Extroverted</div>
-          					</div>
-          					<div class="button" vert="Ambiverted">
-            						<div class="text">Ambiverted, actually!</div>
-          					</div>
-        				</div>
-      			</div>
-      			<img class="stairs-1-icon" alt="" src="../assets/img/Lightning 1.svg">
-      			
-      			<img class="arc-icon" alt="" src="../assets/img/Summertime Sadness.svg">
-                <div class="skip" id="skip" onclick="skip()">Skip</div>
+    <input type="text" id="hiddenInput">
 
-
-    		</div>
-            <div class="arrow-parent">
-                <img class="arrow-icon" alt="" src="../assets/img/arrow.svg" onclick="location.href='/question6'">
-                <img class="arrow-icon" id="forwardArrow" alt="" src="../assets/img/arrow.svg" onclick="location.href='/question8'">
+    <div class="INTRO">
+        <div class="logo-top">
+            <div class="ur-club-at-container">
+                <span class="ur">ur </span>
+                <span class="club-at">club at </span>
+                <span class="ur">ru</span>
             </div>
-    
-  	</div>
-  	
-  	
-      <script src="script.js"></script>
-
-  	
+        </div>
+        <div class="frame-parent">
+            <div class="frame-child"></div>
+            <div class="frame-item"></div>
+        </div>
+        <div class="frame-group">
+            <div class="frame-container">
+                <div class="number-parent">
+                    <div class="number">
+                        <div class="div">7</div>
+                    </div>
+                    <div class="title">
+                        <div class="hey-there-scarlet">Are there any LGBTQ+ identities you identify with or want to support in a student org?</div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="select">
+                            <input type="text" id="myInput" placeholder="Select">
+                        </div>
+                        <img class="uiwdown-icon" alt="Dropdown Icon" src="../assets/img/uiw_down.svg">
+                    </div>
+                    <div class="frame-div hidden">
+                        <div class="frame-wrapper1">
+                            <div class="accounting">Non-binary</div>
+                            <div class="checkbox">
+                                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+                            </div>
+                        </div>
+                        <div class="frame-wrapper1">
+                            <div class="accounting">Gay</div>
+                            <div class="checkbox">
+                                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+                            </div>
+                        </div>
+                        <div class="frame-wrapper1">
+                            <div class="accounting">Bisexual</div>
+                            <div class="checkbox">
+                                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+                            </div>
+                        </div>
+                        <div class="frame-wrapper1">
+                            <div class="accounting">Pansexual</div>
+                            <div class="checkbox">
+                                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+                            </div>
+                        </div>
+                        <div class="frame-wrapper1">
+                            <div class="accounting">Asexual</div>
+                            <div class="checkbox">
+                                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+                            </div>
+                        </div>
+                                                <div class="frame-wrapper1">
+                            <input type="text" class="accounting" id="Other" placeholder="Other...">
+                            <div class="checkbox">
+                                <img class="checkmark" alt="Checkmark" src="../assets/img/tabler_check.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="note-if-youd-prefer-not-to-s-wrapper">
+                        <div class="note-if-youd-container">
+                            <span class="ur">Note</span>
+                            <span>: We understand this may be something you’re not comfortable answering. Feel free to skip this optional question if you'd prefer.</span>
+                        </div>
+                    </div>
+                </div>
+                <img class="heart-2-icon" alt="Heart" src="../assets/img/Heart 2.svg">
+                <div class="skip" id="skip" onclick="skip()">Skip</div>
+            </div>
+        </div>
+        <div class="arrow-parent">
+            <img class="arrow-icon" src="../assets/img/arrow.svg" onclick="location.href='/question6'">
+            <img class="arrow-icon" id="forwardArrow" src="../assets/img/arrow.svg" onclick="location.href='/question8'">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

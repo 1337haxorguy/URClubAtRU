@@ -76,6 +76,8 @@
     height: 89.2px;
     font-size: 36.06px;
     color: #fff;
+    font-family: "Neulis Alt-Regular", Helvetica;
+
 }
 .span {
     font-size: 20px;
@@ -112,9 +114,26 @@
     cursor: pointer;
 
 }
-.accounting {
-    position: relative;
-    line-height: 30px;
+.frame-wrapper1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 19px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    width: 100%; /* Make sure it can expand with content */
+}
+
+.Bruh {
+    flex: 1; /* Allow the text to expand */
+    margin-right: 10px; /* Space between text and checkbox */
+    display: -webkit-box; /* Use webkit box model for text overflow */
+    -webkit-box-orient: vertical; /* Vertical box orientation */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
 .accounting-wrapper {
     width: 218px;
@@ -147,6 +166,7 @@
     padding-top: 9px;
     padding-bottom: 9px;
     box-sizing: border-box;
+    
 }
 .frame-div {
     width: 288px;
@@ -234,10 +254,9 @@
 
 .INTRO {
     width: 430px;
-    /* height: 932px;  */
+    height: 932px; 
     position: relative;
     background-color: #fcf8f6;
-    overflow: hidden;
     text-align: left;
     font-size: 30px;
     color: #e63a26;
@@ -380,3 +399,23 @@
     transform: scaleX(-1);  
 }
 
+
+.arrow-icon {
+    width: auto;
+    position: relative;
+    height: 52.6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    }
+    .arrow-parent {
+    position: absolute;
+    top: 820px;
+    left: calc(50% - 171.79px);
+    width: 341.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 242px;
+}

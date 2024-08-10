@@ -37,7 +37,7 @@
     left: calc(50% - 160px);
     border-radius: 100px;
     background-color: #e63a26;
-    width: 47px;
+    width: 205.2px;
     height: 8px;
     overflow: hidden;
 }
@@ -79,7 +79,7 @@
     height: 89.2px;
     font-size: 36px;
     color: #fff;
-    font-family: 'Neulis Alt';
+    font-family: "Neulis Alt-Regular", Helvetica;
 
 }
 .span {
@@ -426,4 +426,23 @@
     margin-left: -4px;
     font-family: 'Neulis Alt-Regular';
     margin-right: 10px;
+}
+.arrow-icon {
+    width: auto;
+    position: relative;
+    height: 52.6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    }
+    .arrow-parent {
+    position: absolute;
+    top: 820px;
+    left: calc(50% - 171.79px);
+    width: 341.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 242px;
 }

@@ -37,7 +37,7 @@
     left: calc(50% - 160px);
     border-radius: 100px;
     background-color: #e63a26;
-    width: 47px;
+    width: 68.4px;
     height: 8px;
     overflow: hidden;
 }
@@ -76,6 +76,8 @@
     height: 89.2px;
     font-size: 36.06px;
     color: #fff;
+    font-family: "Neulis Alt-Regular", Helvetica;
+
 }
 .span {
     font-size: 20px;
@@ -113,8 +115,13 @@
 
 }
 .accounting {
-    position: relative;
-    line-height: 30px;
+    flex: 1;
+    margin-right: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .accounting-wrapper {
     width: 218px;
@@ -405,3 +412,22 @@
     color: #fff;
 }
     
+.arrow-icon {
+    width: auto;
+    position: relative;
+    height: 52.6px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+    }
+    .arrow-parent {
+    position: absolute;
+    top: 820px;
+    left: calc(50% - 171.79px);
+    width: 341.6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 242px;
+}

@@ -9,13 +9,13 @@ const openai = new OpenAI({
 export async function getRecommendations(systemPrompt, userPrompt) {
     try {
         const response = await openai.chat.completions.create({
-            // model: "gpt-4o-2024-05-13",
             model: "gpt-4o-mini",
             messages: [
                 { role: "system", content: systemPrompt },
                 { role: "user", content: userPrompt }
             ],
             stream: false,
+            temperature: 0.1 // Setting the temperature to a low value for consistency
         });
         const generatedText = response.choices[0].message.content;
         return generatedText;

@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         arrowIcon.classList.toggle('rotated');
         if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
+            hideSkipButton()
 
             // Show hidden input, focus it, and then hide it again
             hiddenInput.style.visibility = 'visible';
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inputField.placeholder = "Select";
             inputField.value = "";
+            showSkipButton()
         }
         updateReadOnlyState();
     }
@@ -117,11 +119,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     selectButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
-        toggleDropdown();
+        
+        // Only toggle the dropdown if it is currently hidden
+        if (frameDiv.classList.contains('hidden')) {
+            toggleDropdown();
+        }
     });
-
     inputField.addEventListener('input', function() {
         filterFunction();
+    });
+
+    arrowIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleDropdown();
     });
 
     forwardArrow.addEventListener('click', function() {
@@ -140,6 +150,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSkipButton() {
         skipButton.classList.remove('hidden');
     }
+
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
+
 });
 
 function skip() {

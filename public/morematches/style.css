@@ -1,0 +1,248 @@
+.ur {
+    line-height: 27.92px;
+    font-weight: 600;
+}
+.club-at {
+    line-height: 27.92px;
+    font-weight: 600;
+    font-family: Neulis;
+}
+.ur-club-at-container {
+    position: absolute;
+    width: 81.13%;
+    top: 0%;
+    left: 18.87%;
+    display: inline-block;
+}
+.frame-child {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+.ur-club-at-ru-parent {
+    position: absolute;
+    top: 46px;
+    left: 29px;
+    width: 159px;
+    height: 28px;
+    color: #e63a26;
+}
+.more-matches {
+    position: absolute;
+    top: 104px;
+    left: 29px;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    line-height: 47px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width: 366px;
+    height: 51px;
+}
+.club-title-lorem {
+    position: relative;
+    line-height: 70px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.club-title-lorem-ipsum-blah-wrapper {
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+
+
+}
+.lorem-ipsum-dolor {
+    width: 279px;
+    position: relative;
+    letter-spacing: 0.04em;
+    line-height: 18px;
+    display: inline-block;
+    flex-shrink: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lorem-ipsum-dolor-sit-amet-co-wrapper {
+    align-self: stretch;
+    height: 63px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 16px;
+}
+.frame-group {
+    align-self: stretch;
+    height: 102px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 13px;
+    box-sizing: border-box;
+}
+.frame-parent {
+    position: absolute;
+    top: 185px;
+    left: 29px;
+    border-radius: 20px;
+    background-color: #e63a26;
+    width: 366px;
+    height: 521px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8px 18px 8px 22px;
+    box-sizing: border-box;
+    gap: 13px;
+    text-align: center;
+    color: #fff;
+}
+.rivet-iconsarrow-up {
+    width: 18px;
+    position: relative;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+.see-top-5-summary-parent {
+    position: absolute;
+    top: 747px;
+    left: 29px;
+    border-radius: 100px;
+    background-color: #000;
+    width: 286px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    gap: 11px;
+    cursor: pointer;
+}
+.view-on-get {
+    position: relative;
+    line-height: 27.92px;
+}
+.view-on-get-involved-wrapper {
+    position: absolute;
+    top: 821px;
+    left: 29px;
+    border-radius: 100px;
+    background-color: #000;
+    width: 286px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.ending-13-child {
+    position: absolute;
+    top: 487px;
+    left: 315px;
+    width: 349px;
+    height: 0px;
+}
+.ending-13 {
+    width: 430px;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    color: #fcf8f6;
+    font-family: 'Neulis Alt';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ... (previous CSS remains the same) ... */
+
+.frame-parent {
+    position: absolute;
+    top: 185px;
+    left: 29px;
+    border-radius: 20px;
+    background-color: #e63a26;
+    width: 366px;
+    height: 521px;
+    overflow-y: auto; /* Changed from 'hidden' to 'auto' */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Changed from 'flex-start' */
+    justify-content: flex-start; /* Changed from 'center' */
+    padding: 8px 0; /* Removed left and right padding */
+    box-sizing: border-box;
+    gap: 13px;
+    text-align: center;
+    color: #fff;
+}
+
+.frame-group {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 13px; /* Added top and bottom padding */
+    box-sizing: border-box;
+    width: 100%; /* Ensure full width */
+}
+
+.club-title-lorem-ipsum-blah-wrapper {
+    width: 100%; /* Ensure full width */
+}
+
+.club-title-lorem {
+    text-align: left; /* Align text to the left */
+    padding-right: 10px; /* Add some right padding */
+}
+
+.lorem-ipsum-dolor-sit-amet-co-wrapper {
+    width: 100%; /* Ensure full width */
+}
+
+.lorem-ipsum-dolor {
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Use full width */
+    padding-right: 10px; /* Add some right padding */
+}
+
+/* ... (rest of the CSS remains the same) ... */

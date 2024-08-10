@@ -1,0 +1,73 @@
+.untitled-design-3-1 {
+    position: absolute;
+    top: calc(50% - 466px);
+    left: calc(50% - 215px);
+    width: 430px;
+    height: 932px;
+    object-fit: cover;
+}
+.we-found-your {
+    position: absolute;
+    top: 88px;
+    left: calc(50% - 159px);
+    line-height: 39px;
+    font-weight: 600;
+    display: inline-block;
+    width: 318px;
+    height: 129px;
+    font-size: 40px;
+line-height: 39px;
+font-weight: 600;
+
+}
+.ending-5-child {
+    position: absolute;
+    top: 303px;
+    left: calc(50% - 95px);
+    width: 191px;
+    height: 195px;
+}
+.ending-5-item {
+    position: absolute;
+    top: 277px;
+    left: calc(50% + 15px);
+    transform: translateX(-50%);
+    width: 286px;
+    height: 299px;
+}
+.see-my-results {
+    position: relative;
+    line-height: 39px;
+    font-weight: 600;
+}
+.see-my-results-wrapper {
+    position: absolute;
+    top: 675px;
+    left: calc(50% - 156px);
+    border-radius: 100px;
+    background-color: #000;
+    width: 313px;
+    height: 73px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 34px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.ending-5 {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    height: 932px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #fcf8f6;
+    font-family: 'Neulis Alt-Regular';
+}
+

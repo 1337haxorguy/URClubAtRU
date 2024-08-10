@@ -1,75 +1,3 @@
-.cylinder-icon {
-    position: absolute;
-    top: calc(50% - 446px);
-    left: calc(50% - 260px);
-    width: 520px;
-    height: 752px;
-}
-.ending-9-child {
-    position: absolute;
-    top: 475px;
-    left: 320px;
-    width: 349px;
-    height: 0px;
-}
-.div {
-    position: absolute;
-    top: 151.75px;
-    left: 178px;
-    letter-spacing: 0.04em;
-    line-height: 192.85px;
-    font-weight: 600;
-    color: #fcf8f6;
-}
-.insert-club-title {
-    position: absolute;
-    top: 19.75px;
-    left: 0px;
-    letter-spacing: 0.04em;
-    line-height: 47px;
-    font-weight: 600;
-    display: inline-block;
-    width: 366px;
-    height: 170px;
-}
-.insert-club-title-here-loren-i-wrapper {
-    position: absolute;
-    top: 325px;
-    left: calc(50% - 189px);
-    width: 379px;
-    height: 190px;
-    font-size: 40px;
-}
-.lorem-ipsum-dolor {
-    width: 335px;
-    position: relative;
-    letter-spacing: 0.04em;
-    line-height: 29px;
-    font-weight: 600;
-    display: inline-block;
-    flex-shrink: 0;
-}
-.lorem-ipsum-dolor-sit-amet-co-wrapper {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 176px);
-    width: 352px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 15px;
-    box-sizing: border-box;
-}
-.ending-9-inner {
-    position: absolute;
-    top: 515px;
-    left: calc(50% - 176px);
-    width: 352px;
-    height: 87px;
-    font-size: 20px;
-    color: #000;
-}
 .next {
     position: relative;
     line-height: 39px;
@@ -90,35 +18,245 @@
     justify-content: center;
     padding: 20px 34px;
     box-sizing: border-box;
-    font-size: 30px;
 }
-.bookmark-icon {
+.ending-11-child {
     position: absolute;
-    top: 236px;
-    left: 327px;
-    border-radius: 7px;
-    width: 79px;
-    height: 89.2px;
+    top: 29px;
+    left: 0px;
+    width: 430px;
+    height: 773px;
+}
+.tree-icon {
+    position: absolute;
+    top: 15px;
+    left: 1px;
+    width: 429px;
+    height: 750px;
+    object-fit: cover;
+}
+.div {
+    position: absolute;
+    top: 153.45px;
+    left: 32.39px;
+    font-size: 130px;
+    letter-spacing: 0.04em;
+    line-height: 202.27px;
+    font-weight: 600;
+    color: #fcf8f6;
+}
+.lightning-1-icon {
+    position: absolute;
+    top: 134.57px;
+    left: 229.67px;
+    border-radius: 4.14px;
+    width: 82.6px;
+    height: 146.4px;
     object-fit: contain;
 }
-.stairs-1-icon {
-    position: absolute;
-    top: 86px;
-    left: 23px;
-    border-radius: 8px;
-    width: 114.9px;
-    height: 114.9px;
-    object-fit: contain;
-}
-.ending-9 {
-    width: 100%;
+.ending-11 {
+    width: 430px;
     position: relative;
     background-color: #fcf8f6;
     height: 932px;
     overflow: hidden;
     text-align: center;
-    font-size: 130px;
+    font-size: 30px;
     color: #fff;
-    font-family: 'Neulis Alt';
+    font-family: 'Neulis Alt-Regular';
 }
 
+.content-wrapper {
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .insert-club-title-here-loren-i-wrapper {
+    width: 100%;
+    margin-bottom: 25px; /* This creates the 25px gap */
+  }
+  
+  .insert-club-title {
+    font-size: 40px;
+    letter-spacing: 0.04em;
+    line-height: 47px;
+    font-weight: 600;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .lorem-ipsum-dolor-sit-amet-co-wrapper {
+    width: 100%;
+  }
+  
+  .lorem-ipsum-dolor {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    line-height: 29px;
+    font-weight: 600;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+
+  }
+
+  .next-wrapper {
+    position: absolute;
+    top: 802px;
+    left: calc(50% - 78px);
+    border-radius: 100px;
+    background-color: #000;
+    width: 156px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 34px;
+    box-sizing: border-box;
+    font-family: 'Neulis Alt-Regular';
+    font-size: 20.34px;
+
+}
+
+
+
+.cultural {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 105.73px;
+    display: inline-block;
+    width: 358px;
+    height: 84px;
+    font-family: 'Neulis Alt';
+    font-size: 60px;
+
+    }
+
+
+.insert-club-title-1, .insert-club-title-2 {
+    margin-left: 20px;
+    width: 355px;
+    position: relative;
+    font-size: 26.74px;
+    letter-spacing: 0.04em;
+    line-height: 31.42px;
+    font-weight: 600;
+    font-family: 'Neulis Alt-Regular';
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.lorem-ipsum-dolor-1, .lorem-ipsum-dolor-2 {
+    margin-left: 20px;
+
+    width: 345px;
+    position: relative;
+    font-size: 13.37px;
+    letter-spacing: 0.04em;
+    line-height: 19.39px;
+    font-weight: 600;
+    font-family: 'Neulis Alt-Regular';
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 25px;
+    margin-top: 20px;
+
+    }
+                    
+.insert-club-title-1.single-club {
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.lorem-ipsum-dolor-1.single-club {
+    font-size: 20px;
+    line-height: 29px;
+}
+            
+
+.bruh {
+    width: 430px;
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+
+}
+
+.view-more-clubs {
+    position: relative;
+    line-height: 27.92px;
+    font-size: 17px;
+    }
+    .view-more-clubs-wrapper {
+    position: absolute;
+    top: 810px;
+    border-radius: 100px;
+    background-color: #000;
+    width: 203px;
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 31px;
+    box-sizing: border-box;
+    left: 26px;
+    cursor: pointer;
+    }
+    .rivet-iconsarrow-up {
+        width: 18px;
+        position: relative;
+        height: 18px;
+        overflow: hidden;
+        flex-shrink: 0;
+        object-fit: contain;
+        }
+        .finish-parent {
+        position: absolute;
+        top: 810px;
+        left: 266px;
+        border-radius: 100px;
+        background-color: #000;
+        width: 126px;
+        height: 55px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        gap: 11px;
+        }
+    

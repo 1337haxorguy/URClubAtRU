@@ -54,6 +54,7 @@
     gap: 9px;
     cursor: pointer;
     color: #fff;
+    border-radius: 100px;
 }
 .intro-1-child {
     position: absolute;
@@ -72,10 +73,10 @@
 .intro-1-inner {
     position: absolute;
     top: 15.3px;
-    left: 138.71px;
-    width: 310.575px;
-    height: 324.75px;
-    object-fit: contain;
+    left: 128.71px;
+    width: 341.6325px;
+    height: 357.225px;
+        object-fit: contain;
     }
 .lucidesparkle-icon {
     position: absolute;

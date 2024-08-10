@@ -1,58 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club Recommendations</title>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../assets/img/UR club Instagram Post (4) 1.png" type="image/png">
+    <title>UrClubAtRU</title>
+
+
 </head>
 <body>
-    <h1>Club Recommendations</h1>
-    <div id="clubs-container">
-        <h2>Filtered Clubs:</h2>
-        <ul id="filtered-clubs"></ul>
-    </div>
-    <div id="recommendations-container">
-        <h2>Recommendations:</h2>
-        <div id="recommendations"></div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const filteredClubs = JSON.parse(localStorage.getItem('filteredClubs') || '[]');
-            let recommendations = JSON.parse(localStorage.getItem('recommendations') || '[]');
+    <div class="ending-7">
+        <div class="next-wrapper" id="next">
+            <div class="next" >Next</div>
+        </div>
+        <div class="ending-7-child"></div>
+        <div class="frame-parent">
+            <img class="frame-child" alt="" src="../assets/img/Frame 108.png">
+            <div class="frame-item"></div>
+            <div class="frame-inner"></div>
+            <div class="frame-div"></div>
+            <div class="urclubatru-designs-wallpaper-parent">
+                <img class="urclubatru-designs-wallpaper" alt="" src="../assets/img/Urclubatru Designs Wallpaper (15) 1.png">
+                <div class="ellipse"></div>
+            </div>
+            <div class="frame-child1"></div>
+            <div class="parent">
+                <!-- <div class="div">1</div> -->
+            <div class="content-wrapper">
+                <div class="club-1">
+                    <div class="insert-club-title-1">[Insert club title here]</div>
+                    <div class="lorem-ipsum-dolor-1">[Insert club description here]</div>
+                </div>
+                <!-- Club 2 -->
+                <div class="club-2">
+                    <div class="insert-club-title-2">[Insert club title here]</div>
+                    <div class="lorem-ipsum-dolor-2">[Insert club description here]</div>
+                </div>
 
-            function displayFilteredClubs(clubs) {
-                const filteredClubsList = document.getElementById('filtered-clubs');
-                filteredClubsList.innerHTML = '';
-                clubs.forEach(club => {
-                    const listItem = document.createElement('li');
-                    listItem.textContent = `${club.name}: ${club.description}`;
-                    filteredClubsList.appendChild(listItem);
-                });
-            }
-
-            function displayRecommendations(recommendations) {
-                const recommendationsDiv = document.getElementById('recommendations');
-                recommendationsDiv.innerHTML = '';
+            </div>
+            <div class="cultural-wrapper">
+                <div class="cultural">cultural</div>
+                </div>
                 
-                let currentNumber = 0;
-                recommendations.forEach((recommendation, index) => {
-                    const p = document.createElement('p');
-                    
-                    if (recommendation.startsWith('**')) {
-                        currentNumber++;
-                        p.innerHTML = `<strong> ${recommendation.replace(/\*\*/g, '')}</strong>`;
-                    } else {
-                        p.textContent = recommendation;
-                    }
-                    
-                    recommendationsDiv.appendChild(p);
-                });
-            }
-
-            displayFilteredClubs(filteredClubs);
-            displayRecommendations(recommendations);
-        });
-    </script>
-    <button onclick="location.href='/answer2'"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

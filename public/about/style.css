@@ -1,0 +1,260 @@
+.frame-child {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 29.7px;
+    flex-shrink: 0;
+    }
+.about-page-inner {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px 27.7px;
+    box-sizing: border-box;
+    }
+.about-the-creators {
+    position: absolute;
+    top: 16.97px;
+    left: calc(50% - 188px);
+    line-height: 56px;
+    font-weight: 600;
+    display: inline-block;
+    width: 376px;
+}
+.frame-item {
+    position: absolute;
+    top: 0px;
+    left: 89.24px;
+    border-radius: 100px;
+    width: 103.5px;
+    height: 46.9px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.frame-inner {
+    position: absolute;
+    top: 104.01px;
+    left: 191.28px;
+    border-radius: 100px;
+    width: 118.4px;
+    height: 48.9px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.about-the-creators-parent {
+    align-self: stretch;
+    position: relative;
+    height: 152.9px;
+    font-size: 70px;
+    color: #090909;
+}
+.ur-club-at {
+    width: 343px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    line-height: 19px;
+    display: inline-block;
+}
+.angelo-dela-fuente {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 39px;
+    font-weight: 600;
+    display: inline-block;
+    width: 321px;
+    height: 38px;
+}
+.angelo-dela-fuente-wrapper {
+    align-self: stretch;
+    position: relative;
+    height: 38px;
+    font-family: Neulis;
+}
+.software-engineer {
+    width: 181px;
+    position: relative;
+    line-height: 35px;
+    display: inline-block;
+    height: 34px;
+    flex-shrink: 0;
+}
+.software-engineer-wrapper {
+    border-radius: 100px;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16.78px;
+    color: #fff;
+}
+.angelo-is-a {
+    margin: 0;
+}
+.angelo-is-a-container {
+    width: 269px;
+    position: relative;
+    letter-spacing: 0.04em;
+    line-height: 19px;
+    display: inline-block;
+    height: 329px;
+    flex-shrink: 0;
+}
+.angelo-is-a-rising-junior-at-r-wrapper {
+    width: 282px;
+    height: 296px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.frame-group {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 163.5px);
+    border-radius: 20px;
+    background-color: #ece7e1;
+    width: 327px;
+    height: 445px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 33px 26px;
+    box-sizing: border-box;
+    gap: 11px;
+}
+.rilinkedin-fill-icon {
+    width: 29px;
+    position: relative;
+    height: 29px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.tablermail-icon {
+    width: 28px;
+    position: relative;
+    height: 28px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.rilinkedin-fill-parent {
+    position: absolute;
+    top: 460px;
+    left: 26px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.frame-parent {
+    width: 327px;
+    position: relative;
+    height: 489px;
+    text-align: left;
+}
+.product-designer {
+    width: 168px;
+    position: relative;
+    line-height: 35px;
+    display: inline-block;
+    height: 34px;
+    flex-shrink: 0;
+}
+.sophia-is-a-container {
+    width: 264px;
+    position: absolute;
+    margin: 0 !important;
+    top: 11px;
+    left: 9px;
+    letter-spacing: 0.02em;
+    line-height: 19px;
+    display: inline-block;
+    z-index: 0;
+}
+.sophia-is-a-rising-junior-at-r-wrapper {
+    width: 282px;
+    height: 353px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 14px;
+}
+.frame-div {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 163.5px);
+    border-radius: 20px;
+    background-color: #ece7e1;
+    width: 327px;
+    height: 503px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 26px;
+    box-sizing: border-box;
+    gap: 11px;
+}
+.cibinstagram-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.cibinstagram-parent {
+    position: absolute;
+    top: 518px;
+    left: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.frame-container {
+    width: 327px;
+    position: relative;
+    height: 547px;
+    text-align: left;
+}
+.about-page {
+    width: 100%;
+    position: relative;
+    background-color: #fcf8f6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 27px;
+    box-sizing: border-box;
+    gap: 42px;
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    font-family: 'Neulis Alt';
+}
+

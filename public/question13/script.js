@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         arrowIcon.classList.toggle('rotated');
         if (!frameDiv.classList.contains('hidden')) {
             inputField.placeholder = "Search";
+            hideSkipButton()
 
             // Show hidden input, focus it, and then hide it again
             hiddenInput.style.visibility = 'visible';
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inputField.placeholder = "Select";
             inputField.value = "";
+            showSkipButton()
         }
         updateReadOnlyState();
     }
@@ -117,10 +119,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     selectButton.addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
-        toggleDropdown();
-    });
-
-    inputField.addEventListener('input', function() {
+        
+        // Only toggle the dropdown if it is currently hidden
+        if (frameDiv.classList.contains('hidden')) {
+            toggleDropdown();
+        }
+    });    inputField.addEventListener('input', function() {
         filterFunction();
     });
 
@@ -128,6 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
         saveSelectedMinors();
         // You can also redirect to the next page here if needed
         // location.href = '/question1';
+    });
+
+    arrowIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
+        toggleDropdown();
     });
 
     // Initial check to ensure read-only state is set correctly
@@ -140,9 +149,19 @@ document.addEventListener('DOMContentLoaded', function() {
     function showSkipButton() {
         skipButton.classList.remove('hidden');
     }
+
+    document.addEventListener('click', function(event) {
+        if (!selectButton.contains(event.target) && !frameDiv.contains(event.target)) {
+            if (!frameDiv.classList.contains('hidden')) {
+                toggleDropdown();
+            }
+        }
+    });
+
+
 });
 
 function skip() {
-    location.href = "/loading"
+    location.href = "/question14"
     localStorage.setItem('causesPassionateAbout',"none")
 }
