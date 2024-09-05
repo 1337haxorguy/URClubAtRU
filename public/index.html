@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta name="description" content="Discover clubs at Rutgers University that match your personality and interests with our AI-powered quiz. Find your perfect fit based on your unique traits and preferences.">
+    <meta property="og:image" content="https://www.httpsimage.com/v2/738267e1-afc0-4a07-89cc-2d1533c063f2.png">
+
+    <meta property="og:title" content="Discover Your Perfect Club at Rutgers - UrClubAtRU">
+    <meta property="og:description" content="Discover clubs at Rutgers University that match your personality and interests with our AI-powered quiz.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.httpsimage.com/v2/738267e1-afc0-4a07-89cc-2d1533c063f2.png">
+    <meta name="keywords" content="Rutgers University, Rutgers clubs, student clubs, AI quiz, club finder, UrClubAtRU, Your Club at RU, RU Clubs">
+
+
+    <meta name="google-site-verification" content="yQ28bDHci8lp9qM67o5Hdm7n3VZLZOR5G5EzhzW97SY" />
+
 
     <link rel="stylesheet" href="../globals.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preload" href="/intro2" as="document">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <link rel="icon" href="./assets/img/UR club Instagram Post (4) 1.png" type="image/png">
-    <title>UrClubAtRU</title>
+    
+    <title>Find your perfect club at Rutgers - UrClubAtRU</title>
 
     <style>
         .loading-screen {
@@ -40,38 +55,32 @@
         }
     </style>
 </head>
-<body class="loading">
+<body>
     <div class="loading-screen">
         <dotlottie-player class="httpslottiefilescomanimat-icon" src="https://lottie.host/ecd84637-3233-4b0f-8e83-1d757b54c0a7/DHh9Szaszb.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
     </div>
 
-    <div class="main-content">
-        <div class="INTRO">
-            <div class="ur-club-at-container">
-                <span class="ur">ur </span>
-                <span class="club-at">
-                    <span class="club">club</span>
-                    <span class="ur"> at </span>
-                </span>
-                <span class="ur">
-                    <span>ru</span>
-                </span>
-            </div>
-            <div class="find-a-rutgers">Find a Rutgers club based on your personality</div>
-            <div class="take-the-quiz-parent" id="frameContainer">
-                <div class="take-the-quiz" onclick="navigateTo('/intro2')">Take the quiz</div>
-                <img class="rivet-iconsarrow-up" alt="" src="../assets/img/rivet-icons_arrow-up.svg">
-            </div>
-            <img class="intro-1-child" alt="" src="../assets/img/Frame 88.svg">
-            <div class="intro-1-item"></div>
-            <img class="intro-1-inner" alt="" src="../assets/img/Bruh.png">
-            <img class="lucidesparkle-icon" alt="" src="../assets/img/lucide_sparkle.svg">
-            <div class="frame-parent">
-                <img class="frame-child" alt="" src="../assets/img/Frame 37.svg">
-                <div class="dd">D+D</div>
-            </div>
-            <img class="summertime-sadness-icon" alt="" src="../assets/img/clover.svg">
+    <div class="INTRO">
+        <div class="ur-club-at-container">
+            <p class="ur-club-at">
+                <span class="ur">UR </span>
+                <span class="your-club-at-ru">club at </span>
+            </p>
+            <p class="ru">RU</p>
         </div>
+        <div class="find-a-rutgers">Find a Rutgers club based on your personality</div>
+        <div class="take-the-quiz-parent" id="frameContainer" onclick="location.href='/intro2'">
+            <div class="take-the-quiz">Take the quiz</div>
+            <img class="rivet-iconsarrow-up" alt="Arrow Up" src="./assets/img/rivet-icons_arrow-up.svg">
+        </div>
+        <img class="intro-1-child" alt="Frame 88" src="./assets/img/Frame 88.svg">
+        <div class="frame-parent">
+            <img class="frame-child" alt="Frame 37" src="./assets/img/Frame 37.svg">
+            <div class="dd">D+D</div>
+        </div>
+        <img class="summertime-sadness-icon" alt="Summertime Sadness" src="./assets/img/Summertime Sadness (1).svg">
+        <img class="x-1-icon" alt="Your Club at RU" src="./assets/img/your club at ru nametag.png">
+        <img class="vector-icon" alt="Vector" src="./assets/img/Vector.svg">
     </div>
 
     <script>
@@ -89,6 +98,17 @@
                 document.querySelector('.main-content').classList.add('fade-in');
             }, 3000); // 3000 milliseconds = 3 seconds
         });
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "UrClubAtRU",
+        "url": "https://urclubatru.me",
+        "description": "Discover clubs at Rutgers University that match your personality and interests with our AI-powered quiz.",
+        "logo": "https://urclubatru.me/assets/img/LOGO.png"
+    }
     </script>
 </body>
 </html>

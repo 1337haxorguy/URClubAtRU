@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'Cognitive Science',
         'Comparative Literature',
         'Computer Science',
+        'Data Science',
+        'DCIM',
         'Economics',
         'English',
         'European Studies',
@@ -142,8 +144,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 inputField.focus(); // Focus back to original input
             }, 100); // Adjust delay as needed
         } else {
-            inputField.placeholder = "Select";
-            inputField.value = "";
+            if (selectedMinors.length > 0) {
+                inputField.placeholder = selectedMinors.join(', ');
+            } else {
+                inputField.placeholder = "Select";
+            }
             showSkipButton()
         }
         updateReadOnlyState();

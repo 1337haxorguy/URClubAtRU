@@ -1,33 +1,53 @@
-.ur {
-    font-weight: 600;
-}
-.club {
-    font-weight: 600;
-    font-family: Neulis;
-}
-.club-at {
+
+.INTRO {
+    position: relative;
+    width: 430px;
+    height: 932px;
+    background-color: #fcf8f6;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
     color: #000;
+    font-family: 'Neulis Alt-Regular';
+    color: #000;
+
+}
+
+.ur {
+    color: #e63a26;
+}
+.ur-club-at {
+    margin: 0;
+}
+.ru {
+    margin: 0;
+    color: #e63a26;
 }
 .ur-club-at-container {
     position: absolute;
-    top: calc(50% - 29px);
-    left: calc(50% - 153px);
-    font-size: 80px;
-    line-height: 70px;
+    top: calc(50% - 187px);
+    left: calc(50% - 113px);
+    font-size: 94.17px;
+    letter-spacing: -0.02em;
+    line-height: 80px;
+    font-weight: 500;
     display: inline-block;
-    width: 311px;
-    color: #e63a26;
+    width: 226px;
 }
 .find-a-rutgers {
     position: absolute;
-    top: 614px;
-    left: calc(50% - 134px);
+    top: 653px;
+    left: calc(50% - 136px);
+    letter-spacing: -0.01em;
+    font-weight: 500;
     display: inline-block;
     width: 273px;
     height: 51px;
 }
 .take-the-quiz {
     position: relative;
+    letter-spacing: 0.01em;
+    font-weight: 500;
 }
 .rivet-iconsarrow-up {
     width: 18px;
@@ -39,12 +59,11 @@
 }
 .take-the-quiz-parent {
     position: absolute;
-    top: 716px;
-    left: calc(50% - 111px);
-    border-radius: 10px;
+    top: 744px;
+    left: calc(50% - 109.5px);
+    border-radius: 100px;
     background-color: #000;
     height: 55px;
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,37 +73,13 @@
     gap: 9px;
     cursor: pointer;
     color: #fff;
-    border-radius: 100px;
 }
 .intro-1-child {
     position: absolute;
-    top: 175px;
-    left: -24px;
-    width: 191px;
-    height: 210.7px;
-}
-.intro-1-item {
-    position: absolute;
-    top: 87px;
-    left: 153px;
-    width: 328.5px;
-    height: 328.5px;
-}
-.intro-1-inner {
-    position: absolute;
-    top: 15.3px;
-    left: 128.71px;
-    width: 341.6325px;
-    height: 357.225px;
-        object-fit: contain;
-    }
-.lucidesparkle-icon {
-    position: absolute;
-    top: 8px;
-    left: 193.27px;
-    width: 129px;
-    height: 129px;
-    overflow: hidden;
+    top: 466px;
+    left: -10px;
+    width: 128.9px;
+    height: 142px;
     object-fit: contain;
 }
 .frame-child {
@@ -114,24 +109,52 @@
     gap: 3.2px;
     text-align: left;
     font-size: 14.72px;
+    font-family: 'Neulis Alt';
 }
 .summertime-sadness-icon {
     position: absolute;
-    top: -65.46px;
-    left: -58.46px;
-    width: 233.7px;
-    height: 233.7px;
+    top: 98px;
+    left: -59px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    color: black;
+    transform: rotate(15deg);
+}
+.x-1-icon {
+    position: absolute;
+    top: 430px;
+    left: 282px;
+    width: 340.86px;
+    height: 227.76px;
+        object-fit: contain;
+    margin-left: -40px;
+}
+.vector-icon {
+    position: absolute;
+    height: 11.9%;
+    width: 25.79%;
+    top: 23.71%;
+    right: 3.51%;
+    bottom: 64.39%;
+    left: 70.7%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
     object-fit: contain;
 }
-.INTRO {
+.intro-1 {
+    width: 100%;
     position: relative;
-    width: 430px;
-    height: 932px;
     background-color: #fcf8f6;
+    height: 932px;
     overflow: hidden;
     text-align: center;
     font-size: 20px;
     color: #000;
-    font-family: 'Neulis Alt-Regular';
+    font-family: Gordita;
 }
 
+.your-club-at-ru {
+    color: black;
+}

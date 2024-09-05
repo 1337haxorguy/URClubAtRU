@@ -5,7 +5,7 @@
     overflow: hidden;
     height: 29.7px;
     flex-shrink: 0;
-    }
+}
 .about-page-inner {
     width: 100%;
     position: relative;
@@ -29,7 +29,9 @@
 .frame-item {
     position: absolute;
     top: 0px;
-    left: 89.24px;
+    left: calc(50% - 50px);
+    transform: translateX(-50%);
+    /* left: 89.24px; */
     border-radius: 100px;
     width: 103.5px;
     height: 46.9px;
@@ -39,7 +41,10 @@
 .frame-inner {
     position: absolute;
     top: 104.01px;
-    left: 191.28px;
+    left: calc(50% + 80px);
+    transform: translateX(-50%);
+
+    /* left: 191.28px; */
     border-radius: 100px;
     width: 118.4px;
     height: 48.9px;
@@ -75,7 +80,7 @@
     align-self: stretch;
     position: relative;
     height: 38px;
-    font-family: Neulis;
+    font-family: 'Neulis';
 }
 .software-engineer {
     width: 181px;

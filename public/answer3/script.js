@@ -133,8 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check for non-empty Cultural clubs first
          if (parsedClubs.other.length > 0 
             && !parsedClubs.other[0].name.toLowerCase().includes('none')
-            && !parsedClubs.other[0].name.toLowerCase().includes('no')
-
+            && !/\bno\b/.test(parsedClubs.other[0].name.toLowerCase())
             && !parsedClubs.other[0].name.toLowerCase().includes('unfortunately')) {
                 location.href = '/answer4'; // Go to Other Clubs
     

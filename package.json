@@ -15,5 +15,9 @@
     "node-fetch": "^3.3.2",
     "openai": "^4.52.0",
     "vercel": "^35.2.2"
+  },
+  "overrides": {
+    "semver": "^7.5.3"
   }
+
 }

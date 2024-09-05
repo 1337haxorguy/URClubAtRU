@@ -35,21 +35,6 @@
     line-height: 47px;
     font-weight: 600;
 }
-.lorem-ipsum-dolor {
-    width: 350px;
-    margin-left: 20px;
-    position: relative;
-    font-size: 20px;
-    letter-spacing: 0.04em;
-    line-height: 29px;
-    font-weight: 600;
-    color: #000;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .insert-club-title-here-loren-i-parent {
     flex: 1;
     display: flex;
@@ -157,17 +142,6 @@
     text-overflow: ellipsis;
   }
   
-  .lorem-ipsum-dolor {
-    margin-top: 25px;
-    width: 100%;
-    font-size: 20px;
-    letter-spacing: 0.04em;
-    line-height: 29px;
-    font-weight: 600;
-    text-align: left;
-    margin-left: 50px;
-
-  }
 
   .next-wrapper {
     position: absolute;

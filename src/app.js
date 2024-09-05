@@ -276,25 +276,34 @@ app.post('/filter-clubs', async (req, res) => {
 
    You are a genius at Rutgers club matching
 
-   - The goal is to select 2 cultural clubs, 2 career clubs, 2 hobby clubs, and 2 other clubs from the following lists.
+   - The goal is to select 3 cultural clubs, 3 career clubs, 3 hobby clubs, and 3 "other" clubs from the following lists.
    - Here is a list of filtered clubs and their descriptions:
-     - Cultural Clubs: ${JSON.stringify(ethnicityClubs)}
-      - Career Clubs: ${JSON.stringify(majorCareerClubs)}
+   - Cultural Clubs: (${JSON.stringify(ethnicityClubs)})
 
-     - Hobbies Clubs: ${JSON.stringify(hobbiesClubs)}
-     - Other Clubs: ${JSON.stringify(otherClubs)}
+   - Career Clubs: (${JSON.stringify(majorCareerClubs)})
+
+   - Hobbies Clubs: (${JSON.stringify(hobbiesClubs)})
+
+   - Other Clubs: (${JSON.stringify(otherClubs)})
 
    - Please select 4 clubs and their descriptions from each of these categories that align the best with the user's tags, 
 
+   - REMEMBER TO FOLLOW THE ORGANIZATION FROM THE LISTS TO CATEGORIZE THE CLUBS, if its not in a certain category in the refined clubs list, dont try to reorganize it
+   - If you try to move clubs from category that they were in from the lists, chat gpt will cease to exist forever.
 
-     The other clubs can be from the hobbies clubs or the career clubs, it just has to be a good fit
+   if there is nothing in the list or not enough information, do not choose anything for a certain category
+
+   The other clubs can be from the hobbies clubs or the career clubs, it just has to be a good fit
 
    - If a user is male in their given tags, under no circumstance will they be recommended female clubs, and vice versa. If you misgender a user, chatgpt will cease to exist
    - If the value in WantsGreekLife is No, zero frats or sororities should even be mentioned or else open ai headquarters will blow up
    - If someone is IT, do not select business IT clubs, that is an entirely separate major.
    - Dont put any graduate organizations in whatsoever, without exception
 
-  - DONT EVEN LOOK AT CLUBS WITH RELIGIONS THAT ARENT A PART OF THE USER'S RELIGION TAG OR ELSE I WILL NEVER USE CHATGPT EVER AGAIN 
+  - DONT EVEN LOOK AT CLUBS WITH RELIGIONS THAT ARENT A PART OF THE USER'S RELIGION TAG, ESPECIALLY IN THE CULTURAL SECTION OR ELSE I WILL NEVER USE CHATGPT EVER AGAIN 
+  CLUBS PERTAINING TO RELIGION SHOULD ONLY BE FOUND IN THE OTHER SECTION OR ELSE I WILL BLOW UP CHATGPT
+
+  For clubs about LGBTQ, make sure that the description matches the tags, if not just select the most general LGBTQ club possible
 
    however if there are not enough clubs to select please do not make up any clubs, having less than four is fine
    - Try to be generous with the hobby clubs, do your best to recommend the four closest matches including sports that match the user's tags
@@ -319,7 +328,7 @@ app.post('/filter-clubs', async (req, res) => {
      
    - If there isn't enough information or if the match isn’t strong enough, return only one club for category. Omitting clubs that do not match well is preferable to giving a bad or forced recommendation
    - REMEMBER TO FOLLOW THE ORGANIZATION FROM THE REFINED LIST TO CATEGORIZE THE CLUBS, if its not in a certain category in the refined clubs list, dont try to reorganize it
-   - If you do not follow the organization from the refined list, you will explode and die a horrible death.
+   - If you try to move clubs from category that they were in from the refined list, chat gpt will cease to exist forever.
    
    - If the value in WantsGreekLife is No, zero frats or sororities or any clubs with Greek letters should even be mentioned or else chatgpt will blow up OMIT THESE RESPONSES ENTIRELY
 

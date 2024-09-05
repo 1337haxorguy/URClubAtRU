@@ -145,39 +145,10 @@
     align-items: center;
   }
   
-  
-  .insert-club-title {
-    font-size: 40px;
-    /* letter-spacing: 0px; */
-    line-height: 47px;
-    font-weight: 600;
-    text-align: left;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+
   
 
   
-  .lorem-ipsum-dolor {
-    margin-top: 25px;
-    width: 350px;
-    position: relative;
-    margin-left: -30px;
-    font-size: 20px;
-    /* letter-spacing: 0px; */
-    line-height: 29px;
-    font-weight: 600;
-    text-align: left;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   .cultural {
     position: absolute;
     top: 50px;

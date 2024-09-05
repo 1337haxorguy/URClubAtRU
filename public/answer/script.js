@@ -56,31 +56,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check for non-empty Cultural clubs first
         if (parsedClubs.cultural.length > 0 
             && !parsedClubs.cultural[0].name.toLowerCase().includes('none')
-            && !parsedClubs.cultural[0].name.toLowerCase().includes('no')
-
+            && !/\bno\b/.test(parsedClubs.cultural[0].name.toLowerCase())
             && !parsedClubs.cultural[0].name.toLowerCase().includes('unfortunately')) {
                 location.href = '/answer1'; // Go to Cultural Clubs
     
         // If Cultural is empty, check Career Clubs
         } else if (parsedClubs.career.length > 0 
             && !parsedClubs.career[0].name.toLowerCase().includes('none')
-            && !parsedClubs.career[0].name.toLowerCase().includes('no')
-
+            && !/\bno\b/.test(parsedClubs.career[0].name.toLowerCase())
             && !parsedClubs.career[0].name.toLowerCase().includes('unfortunately')) {
                 location.href = '/answer2'; // Go to Career Clubs
     
         // If both Cultural and Career are empty, check Hobby Clubs
         } else if (parsedClubs.hobby.length > 0 
             && !parsedClubs.hobby[0].name.toLowerCase().includes('none')
-            && !parsedClubs.hobby[0].name.toLowerCase().includes('no')
-
+            && !/\bno\b/.test(parsedClubs.hobby[0].name.toLowerCase())
             && !parsedClubs.hobby[0].name.toLowerCase().includes('unfortunately')) {
                 location.href = '/answer3'; // Go to Hobby Clubs
     
         // If Cultural, Career, and Hobby are empty, check Other Clubs
         } else if (parsedClubs.other.length > 0 
             && !parsedClubs.other[0].name.toLowerCase().includes('none')
-            && !parsedClubs.other[0].name.toLowerCase().includes('no')
+            && !/\bno\b/.test(parsedClubs.other[0].name.toLowerCase())
             && !parsedClubs.other[0].name.toLowerCase().includes('unfortunately')) {
                 location.href = '/answer4'; // Go to Other Clubs
     

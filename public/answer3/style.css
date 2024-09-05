@@ -92,64 +92,7 @@
 }
 
 
-.insert-club-title {
-    position: relative;
-    top: 19.75px;
-    left: 0px;
-    letter-spacing: 0.04em;
-    line-height: 47px;
-    font-weight: 600;
-    display: inline-block;
-    width: 400px;
-    height: auto;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 40px;
-    margin-bottom: 25px;
 
-}
-.insert-club-title-here-loren-i-wrapper {
-    position: relative;
-    top: 325px;
-    left: calc(50% - 200px);
-    width: 450px;
-    height: auto;
-    font-size: 40px;
-}
-.lorem-ipsum-dolor {
-    width: 400px;
-    font-size: 20px;
-    color: #000;
-
-    position: relative;
-    letter-spacing: 0.04em;
-    line-height: 29px;
-    font-weight: 600;
-    display: inline-block;
-    flex-shrink: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-}
-.lorem-ipsum-dolor-sit-amet-co-wrapper {
-    position: relative;
-    top: 0px;
-    margin-top: 0px;
-    left: calc(50% - 200px);
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 15px;
-    box-sizing: border-box;
-}
 
 .content-wrapper {
     position: absolute;

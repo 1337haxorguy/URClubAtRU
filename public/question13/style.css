@@ -395,10 +395,10 @@
 }
 .stairs-2 {
     position: absolute;
-    top: 50px;
-    left: 225px;
-    width: 86.6px;
-    height: 86.6px;
+    top: 35px;
+    left: 205px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     }
 

@@ -90,8 +90,10 @@ body {
 
 @font-face {
     font-family: 'Neulis Alt-Regular';
-    src: url('/assets/fonts/NeulisAlt-Regular.otf') format('opentype');
-    font-weight: 400;
+    src: url('/assets/fonts/NeulisAlt-Medium.otf') format('opentype');
+    /* font-weight: 400; */
+    font-weight: 600;
+
     font-style: normal;
 }
 

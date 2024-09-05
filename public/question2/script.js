@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Astrophysics', 'Biochemistry', 'Biological Sciences', 'Biomathematics', 'Biomedical Engineering', 'Biotechnology',
         'Business Analytics and Information Technology', 'Cell Biology and Neuroscience', 'Chemical Engineering', 'Chemistry',
         'Chinese', 'Cinema Studies', 'Civil Engineering', 'Classics', 'Cognitive Science', 'Communication', 'Comparative Literature',
-        'Computer Science', 'Criminal Justice', 'Dance', 'Design', 'Digital Filmmaking', 'Ecology, Evolution, and Natural Resources',
+        'Computer Science', 'Criminal Justice', 'Dance', 'Data Science', 'Design',  'Digital Filmmaking', 'Ecology, Evolution, and Natural Resources',
         'Economics', 'Electrical and Computer Engineering', 'English', 'Entomology', 'Environmental and Business Economics',
         'Environmental Engineering', 'Environmental Planning', 'Environmental Policy, Institutions, and Behavior',
         'Environmental Sciences', 'Environmental Studies (available as a second major only)', 'European Studies', 'Exercise Science',
@@ -97,9 +97,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 inputField.focus(); // Focus back to original input
             }, 100); // Adjust delay as needed
         } else {
-            inputField.placeholder = "Select";
+            if (selectedMajors.length > 0) {
+                inputField.placeholder = selectedMajors.join(', ');
+            } else {
+                inputField.placeholder = "Select";
+            }
             inputField.value = "";
-        }
+            }
         updateReadOnlyState();
     }
 

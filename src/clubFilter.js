@@ -14,7 +14,7 @@ const tagVariations = {
         "applied sciences in engineering": ["applied sciences", "engineering", "applied engineering"],
         "art": ["art", "fine arts", "visual arts"],
         "art history": ["art history", "history of art", "art historiography"],
-        "asian studies": ["asian studies", "asian cultures", "east asian studies"],
+        "asian studies": ["Asian American Cultural Center"],
         "astrophysics": ["astrophysics", "astronomy", "cosmology"],
         "biochemistry": ["biochemistry", "biochemical sciences", "biochemist"],
         "biological sciences": ["biological sciences", "biology", "biological research"],
@@ -184,7 +184,7 @@ const tagVariations = {
         "Slovenian": ["Slovenian", "Slovenia"],
         "Somali": ["Somali", "Somalia"],
         "South African": ["South African", "South Africa"],
-        "South Korean": ["South Korean", "South Korea"],
+        "Korean": ["Korean", "Korea"],
         "Spanish": ["Spanish", "Spain"],
         "Sri Lankan": ["Sri Lankan", "Sri Lanka"],
         "Sudanese": ["Sudanese", "Sudan"],
@@ -348,7 +348,7 @@ const tagVariations = {
         "anime / manga": ["anime", "manga", "cosplay", "otaku"],
         "fantasy sports": ["fantasy sports", "fantasy football", "fantasy basketball", "fantasy leagues"],
         "bird watching": ["bird watching", "birding", "wildlife", "nature"],
-        "a capella": ["a capella", "singing", "vocal groups", "choral"],
+        "a capella": ["a capella"],
         "playing musical instruments": ["playing musical instruments", "music", "band", "orchestra"],
         "learning new languages": ["learning new languages", "language learning", "bilingual", "multilingual"],
         "board games": ["board games", "tabletop games", "strategy games", "card games"],
@@ -374,7 +374,7 @@ const tagVariations = {
         "american studies": ["american studies", "american history", "american culture"],
         "anthropology": ["anthropology", "cultural anthropology", "social anthropology"],
         "art history": ["art history", "history of art", "art historiography"],
-        "asian studies": ["asian studies", "asian cultures", "east asian studies"],
+        "asian studies": ["Asian American Cultural Center"],
         "astronomy": ["astronomy", "astrophysics", "cosmology"],
         "biological sciences": ["biological sciences", "biology", "biological research"],
         "chemistry": ["chemistry", "chemical sciences", "chemist"],
@@ -518,6 +518,21 @@ const tagVariations = {
         "taoism": ["taoism", "taoist"],
         "unitarian universalism": ["unitarian universalism", "unitarian"],
         "zoroastrianism": ["zoroastrianism", "zoroaster"]
+    },
+    genderIdentity: {
+        "agender": ["agender", "genderless", "LGBTQ"],
+        "asexual": ["asexual", "ace", "LGBTQ"],
+        "bisexual": ["bisexual", "bi", "LGBTQ"],
+        "demisexual": ["demisexual", "demi", "LGBTQ"],
+        "gay": ["gay", "homosexual", "LGBTQ"],
+        "genderqueer": ["genderqueer", "nonbinary", "LGBTQ"],
+        "intersex": ["intersex", "hermaphrodite", "LGBTQ"],
+        "lesbian": ["lesbian", "gay woman", "LGBTQ"],
+        "non-binary": ["non-binary", "nonbinary", "LGBTQ"],
+        "pansexual": ["pansexual", "pan", "LGBTQ"],
+        "polysexual": ["polysexual", "poly", "LGBTQ"],
+        "queer": ["queer", "genderqueer", "LGBTQ"],
+        "two spirit": ["two spirit", "two-spirit", "LGBTQ"]
     }
     
     
