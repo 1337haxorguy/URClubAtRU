@@ -12,7 +12,6 @@
 ## Technologies Used
 - **OpenAI API**: Powers the recommendation engine by analyzing user inputs and generating relevant club matches.
 - **AWS EC2**: The app is deployed on an EC2 instance for hosting, offering scalability and security.
-- **Next.js**: For the front-end interface.
 - **Express.js**: Backend server for handling API requests and routing.
 
 ## How It Works
