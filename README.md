@@ -20,4 +20,4 @@
 3. **Display Results**: Recommendations are displayed on the screen, allowing users to explore different clubs at Rutgers.
 
 ## Getting Started
-Visit [urclubatru.me](http://urclubatru.me) to start finding clubs that fit your interests. 
+Visit [https://urclubatru.vercel.app/](https://urclubatru.vercel.app/) to start finding clubs that fit your interests. 
