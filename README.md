@@ -1,7 +1,7 @@
 # URClubAtRU - README
 
 ## Overview
-**URClubAtRU** is a web application designed to help students at Rutgers University find clubs that match their interests and preferences. By leveraging the **OpenAI API**, the app offers personalized club recommendations based on user input, making it easier for students to connect with communities and activities they care about. The application is hosted on **AWS EC2** and can be accessed at [urclubatru.me](http://urclubatru.me).
+**URClubAtRU** is a web application designed to help students at Rutgers University find clubs that match their interests and preferences. By leveraging the **OpenAI API**, the app offers personalized club recommendations based on user input, making it easier for students to connect with communities and activities they care about. The application is hosted on **AWS EC2** and can be accessed at [https://urclubatru.vercel.app/](https://urclubatru.vercel.app/).
 
 ## Features
 - **Personalized Recommendations**: Using advanced AI algorithms, URClubAtRU suggests clubs that align with users' interests, hobbies, and career goals.
