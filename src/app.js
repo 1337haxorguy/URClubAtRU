@@ -13,34 +13,37 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, '../public')));
+// app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/intro', express.static(path.join(__dirname, '../public/intro1')));
-app.use('/intro2', express.static(path.join(__dirname, '../public/intro2')));
-app.use('/question1', express.static(path.join(__dirname, '../public/question1')));
-app.use('/question2', express.static(path.join(__dirname, '../public/question2')));
-app.use('/question3', express.static(path.join(__dirname, '../public/question3')));
-app.use('/question4', express.static(path.join(__dirname, '../public/question4')));
-app.use('/question5', express.static(path.join(__dirname, '../public/question5')));
-app.use('/question6', express.static(path.join(__dirname, '../public/question6')));
-app.use('/question7', express.static(path.join(__dirname, '../public/question7')));
-app.use('/question8', express.static(path.join(__dirname, '../public/question8')));
-app.use('/question9', express.static(path.join(__dirname, '../public/question9')));
-app.use('/question10', express.static(path.join(__dirname, '../public/question10')));
-app.use('/question11', express.static(path.join(__dirname, '../public/question11')));
-app.use('/question12', express.static(path.join(__dirname, '../public/question12')));
-app.use('/loading', express.static(path.join(__dirname, '../public/loadingScreen')));
-app.use('/answer', express.static(path.join(__dirname, '../public/answer')));
+app.use(express.static(path.join(process.cwd(), 'public')));
 
-app.use('/answer3', express.static(path.join(__dirname, '../public/answer3')));
-app.use('/answer4', express.static(path.join(__dirname, '../public/answer4')));
-app.use('/answer5', express.static(path.join(__dirname, '../public/answer5')));
-app.use('/answer6', express.static(path.join(__dirname, '../public/answer5')));
-app.use('/matches', express.static(path.join(__dirname, '../public/morematches')));
 
-app.use('/answers', express.static(path.join(__dirname, '../public/answers')));
+// app.use('/intro', express.static(path.join(__dirname, '../public/intro1')));
+// app.use('/intro2', express.static(path.join(__dirname, '../public/intro2')));
+// app.use('/question1', express.static(path.join(__dirname, '../public/question1')));
+// app.use('/question2', express.static(path.join(__dirname, '../public/question2')));
+// app.use('/question3', express.static(path.join(__dirname, '../public/question3')));
+// app.use('/question4', express.static(path.join(__dirname, '../public/question4')));
+// app.use('/question5', express.static(path.join(__dirname, '../public/question5')));
+// app.use('/question6', express.static(path.join(__dirname, '../public/question6')));
+// app.use('/question7', express.static(path.join(__dirname, '../public/question7')));
+// app.use('/question8', express.static(path.join(__dirname, '../public/question8')));
+// app.use('/question9', express.static(path.join(__dirname, '../public/question9')));
+// app.use('/question10', express.static(path.join(__dirname, '../public/question10')));
+// app.use('/question11', express.static(path.join(__dirname, '../public/question11')));
+// app.use('/question12', express.static(path.join(__dirname, '../public/question12')));
+// app.use('/loading', express.static(path.join(__dirname, '../public/loadingScreen')));
+// app.use('/answer', express.static(path.join(__dirname, '../public/answer')));
 
-app.use('/about', express.static(path.join(__dirname, '../public/about')));
+// app.use('/answer3', express.static(path.join(__dirname, '../public/answer3')));
+// app.use('/answer4', express.static(path.join(__dirname, '../public/answer4')));
+// app.use('/answer5', express.static(path.join(__dirname, '../public/answer5')));
+// app.use('/answer6', express.static(path.join(__dirname, '../public/answer5')));
+// app.use('/matches', express.static(path.join(__dirname, '../public/morematches')));
+
+// app.use('/answers', express.static(path.join(__dirname, '../public/answers')));
+
+// app.use('/about', express.static(path.join(__dirname, '../public/about')));
 
 
 app.use(express.json());
